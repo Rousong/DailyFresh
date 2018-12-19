@@ -10,7 +10,7 @@ class User(AbstractUser,BaseModel):
         verbose_name = '用户'
         verbose_name_plural = verbose_name
 
-class Adress(BaseModel):
+class Address(BaseModel):
     '''地址模型类'''
     user = models.ForeignKey('User',verbose_name='所属账户')
     receiver = models.CharField(max_length=20,verbose_name='收件人')

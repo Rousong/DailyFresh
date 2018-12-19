@@ -16,8 +16,9 @@ import sys
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# 加入系统的路径,可以不在使用ａｐｐｓ前缀
+#sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 
-sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -40,10 +41,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tinymce', # 富文本编辑器
-    'user', # 用户模块
-    'cart', # 购物车模块
-    'goods',# 商品模块
-    'order',# 订单模块
+    'apps.user', # 用户模块
+    'apps.cart', # 购物车模块
+    'apps.goods',# 商品模块
+    'apps.order',# 订单模块
+
+
 
 )
 
@@ -85,7 +88,7 @@ WSGI_APPLICATION = 'dailyfresh.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tiantian',
+        'NAME': 'df',
         'USER': 'root',
         'PASSWORD':'',
         'HOST':'localhost',
@@ -95,6 +98,10 @@ DATABASES = {
 }
 #要手动去创建这个数据库:
 # create database tiantian charset=utf8;
+
+
+# 指定django 的默认使用的认证模型类 要不然迁移的时候会报错
+AUTH_USER_MODEL = 'user.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
