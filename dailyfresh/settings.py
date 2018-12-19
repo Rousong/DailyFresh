@@ -17,7 +17,7 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 加入系统的路径,可以不在使用ａｐｐｓ前缀
-#sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
+sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -134,3 +134,18 @@ TINYMCE_DEFAULT_CONFIG ={
     'width':600,
     'height':400,
 }
+
+# 邮件相关的设置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 465
+#发送邮件的邮箱
+EMAIL_HOST_USER = 'do_1024@163.com'
+#在邮箱中设置的客户端授权密码
+EMAIL_HOST_PASSWORD = '******************'
+#收件人看到的发件人
+EMAIL_FROM = 'do_1024<do_1024@163.com>'
+
+# EMAIL_FROM = 'do_1024  这里的名字一定要设置正确的名字 要和邮箱里的设置对应上
+# 要不然就会发送失败
