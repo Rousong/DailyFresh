@@ -7,6 +7,7 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from itsdangerous import SignatureExpired #这是一个异常
+from celery_tasks.tasks import send_register_active_email
 
 import  re
 
@@ -115,6 +116,11 @@ class RegisterView(View):
         send_status = send_mail(subject,message,sender,receiver,html_message=html_mesg)
         print(send_status)
         # 返回一个应答 跳转到首页
+
+
+        # 如何使用异步celery处理延时任务的话 就调用这个函数
+        # send_register_active_email.delay(email,username,token)
+
         return redirect(reverse('goods:index'))
 
 
