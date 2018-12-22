@@ -149,3 +149,20 @@ EMAIL_FROM = 'do_1024<do_1024@163.com>'
 
 # EMAIL_FROM = 'do_1024  这里的名字一定要设置正确的名字 要和邮箱里的设置对应上
 # 要不然就会发送失败
+
+# 配置ｃａｃｈｅ缓存到ｒｅｄｉｓ的2号数据库
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://10.211.55.4:6379/2", # redis所在的主机的IP地址
+        "OPTIONS": {
+        "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+# 配置session的存储到缓存中，即　使用的redis数据库
+#SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+#SESSION_CACHE_ALIAS = "default"
+# 如下设置是默认的 不写的话这就是默认的设置 存储在数据库中
+# SESSION_ENGINE = "django.contrib.sessions.backends.db"

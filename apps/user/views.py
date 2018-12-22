@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect #redirect 重定向
+from django.shortcuts import render,redirect # redirect 重定向
 from django.core.urlresolvers import reverse
 from apps.user.models import User
 from django.views.generic import View
@@ -7,7 +7,9 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from itsdangerous import SignatureExpired #这是一个异常
-from celery_tasks.tasks import send_register_active_email
+from django.contrib.auth import authenticate,login # 这是django对用户登录验证和保持用户登录的模块
+
+# from celery_tasks.tasks import send_register_active_email
 
 import  re
 
@@ -57,7 +59,7 @@ class RegisterView(View):
     '''注册'''
     def get(self,request):
         '''显示注册页面'''
-        return render(request, 'register.html')
+        return render(request, 'register.html',{'username':username,'checked':checked})
 
     def post(self,request):
         '''进行注册处理'''
@@ -71,7 +73,7 @@ class RegisterView(View):
         if not all([username, password1, password2, email]):
             # 如果书库不完整的话
             return render(request, 'register.html', {'errmsg': '表单不完整'})
-        #进行密码两次是否一致的验证
+        # 进行密码两次是否一致的验证
         if password2 != password1:
             return render(request, 'register.html', {'errmsg': '两次密码不一致'})
         if allow != 'on':
@@ -150,4 +152,55 @@ class LoginView(View):
     '''登录'''
     def get(self,request):
         '''显示登录页面'''
-        return render(request,'login.html')
+        # 判断是否记住了用户名
+        if 'username' in request.COOKIES:
+            username = request.COOKIES.get('username')
+            checked = 'checked'
+        else:
+            username = ''
+            checked = ''
+        return render(request,'login.html',{'username':username,'checked':checked})
+
+    def post(self,request):
+        '''登录校验'''
+        # 接收数据
+        username = request.POST.get('username')
+        password = request.POST.get('pwd')
+
+        # 校验数据
+        if not all([username,password]):
+            return render(request,'login.html',{'errmsg':'数据不完整'})
+        # 业务处理:登录校验
+
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            # 用户名密码正确
+            if user.is_active:
+                # 用户已激活
+                # 记录用户的登录状态
+                login(request,user)
+
+                # 跳转到首页
+                response = redirect(reverse('goods:index'))  # 重定向里面的参数 左边是视图模块 右边是视图函数 这里返回的是一个HttpResonseRedirect对象
+
+                # 判断是否需要记住用户名
+                remember = request.POST.get('remember')
+
+                if remember == 'on':
+                    # 记住用户名
+                    response.set_cookie('username',username,max_age=7*24*3600)
+                    print("ceshi")
+                else:
+                    response.delete_cookie('username')
+                # 返回response
+                return response
+
+            else:
+                # 用户未激活
+                return render(request, 'login.html', {'errmsg': '账户未激活'})
+        else:
+            # 用户名或者密码错误
+            print("cuowu")
+            return  render(request,'login.html',{'errmsg':'用户名或者密码错误'})
+
+        # 返回应答
