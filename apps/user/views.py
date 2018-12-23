@@ -59,7 +59,7 @@ class RegisterView(View):
     '''注册'''
     def get(self,request):
         '''显示注册页面'''
-        return render(request, 'register.html',{'username':username,'checked':checked})
+        return render(request, 'register.html')
 
     def post(self,request):
         '''进行注册处理'''
@@ -180,9 +180,11 @@ class LoginView(View):
                 # 记录用户的登录状态
                 login(request,user)
 
-                # 跳转到首页
-                response = redirect(reverse('goods:index'))  # 重定向里面的参数 左边是视图模块 右边是视图函数 这里返回的是一个HttpResonseRedirect对象
+                # 获取登录后所要跳转到的地址
+                next_url = request.GET.get('next',reverse('goods:index'))
 
+                # 跳转到首页
+                response = redirect(next_url)
                 # 判断是否需要记住用户名
                 remember = request.POST.get('remember')
 
@@ -204,3 +206,27 @@ class LoginView(View):
             return  render(request,'login.html',{'errmsg':'用户名或者密码错误'})
 
         # 返回应答
+
+# /user/
+class UserInfoView(View):
+    '''用户中心-信息页'''
+    def get(self,request):
+        '''显示'''
+        page = 'user'
+        return  render(request,'user_center_info.html',{'page':page})
+
+# /user/order
+class UserOrderView(View):
+    '''用户中心-订单页'''
+    def get(self, request):
+        '''显示'''
+        page = 'order'
+        return render(request, 'user_center_order.html',{'page':page})
+
+# /user/address
+class AddressView(View):
+    '''用户中心-地址页'''
+    def get(self, request):
+        '''显示'''
+        page = 'addr'
+        return render(request, 'user_center_site.html',{'page':page})

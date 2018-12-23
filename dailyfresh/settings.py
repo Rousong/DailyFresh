@@ -166,3 +166,6 @@ CACHES = {
 #SESSION_CACHE_ALIAS = "default"
 # 如下设置是默认的 不写的话这就是默认的设置 存储在数据库中
 # SESSION_ENGINE = "django.contrib.sessions.backends.db"
+
+# 配置登录url的地址 默认的是 'accounts/login'
+LOGIN_URL = '/user/login'
