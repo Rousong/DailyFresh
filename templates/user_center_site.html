@@ -8,13 +8,13 @@
                         {% if address %}
 						    <dd>{{ address.addr }} （{{ address.receiver }} 收） {{ address.phone }}</dd>
 					    {% else %}
-                            <dd>无</dd>
+                            <dd>{{ errmsg }}</dd>
                         {% endif %}
                     </dl>
 				</div>
 				<h3 class="common_title2">编辑地址</h3>
 				<div class="site_con">
-					<form method="post" action="{% url 'user:address' %}">
+					<form method="post">
                         {% csrf_token %}
 						<div class="form_group">
 							<label>收件人：</label>

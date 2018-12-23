@@ -162,8 +162,8 @@ CACHES = {
 }
 
 # 配置session的存储到缓存中，即　使用的redis数据库
-#SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-#SESSION_CACHE_ALIAS = "default"
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
 # 如下设置是默认的 不写的话这就是默认的设置 存储在数据库中
 # SESSION_ENGINE = "django.contrib.sessions.backends.db"
 
