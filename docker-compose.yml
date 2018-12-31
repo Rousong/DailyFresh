@@ -20,8 +20,10 @@ services:
     command: '/app/docker/start-server.sh'
     volumes:
       - .:/app
+    environment:
+      - PYTHONUNBUFFERED=0
     ports:
-      - "8000:8000"
+      - "3000:8000"
     links:
       - db
 
