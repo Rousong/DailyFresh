@@ -330,7 +330,7 @@ class AddressView(LoginRequiredMixin,View):
             is_default = True
 
         # 添加地址
-        Address.objects.create(user=user,
+        Address.object.create(user=user,
                                receiver=receiver,
                                addr=addr,
                                zip_code=zip_code,

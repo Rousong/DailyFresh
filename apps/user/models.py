@@ -37,6 +37,7 @@ class Address(BaseModel):
 
     # 自定义一个模型管理器对象
     object = AddressManager()
+
     class Mata:
         db_table = 'df_address'
         verbonse_name = '地址'
