@@ -10,3 +10,4 @@ sleep 5
 celery flower --broker=redis://redis:6379/1
 
 echo "※※※==============部署已完成,谢谢======================※※※"
+
