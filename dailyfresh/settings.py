@@ -116,6 +116,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+CELERY_ENABLE_UTC = True
+CELERY_TIMEZONE = "UTC"
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
@@ -150,20 +154,38 @@ EMAIL_FROM = 'do_1024<do_1024@163.com>'
 # EMAIL_FROM = 'do_1024  这里的名字一定要设置正确的名字 要和邮箱里的设置对应上
 # 要不然就会发送失败
 
+
+# CELERY_BROKER_URL = 'redis://redis:6379/0'
+# CELERY_BROKER_TRANSPORT = 'redis'
+# CELERY_RESULT_BACKEND = "redis"
+# CELERY_BACKEND_URL = 'redis://redis:6379/1'
+#
+# BROKER_TRANSPORT = "redis"
+# _REDIS_LOCATION = 'redis://{}:{}'.format(os.environ.get("REDIS_PORT_6379_TCP_ADDR"), os.environ.get("REDIS_PORT_6379_TCP_PORT"))
+# BROKER_URL = _REDIS_LOCATION + "/0"
+# CELERY_RESULT_BACKEND = _REDIS_LOCATION + "/1"
+#
+# REDIS_PORT = 6379
+# REDIS_DB = 0
+# REDIS_HOST = os.environ.get('REDIS_PORT_6379_TCP_ADDR', 'redis')
+#
 # # 配置ｃａｃｈｅ缓存到ｒｅｄｉｓ的2号数据库
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django_redis.cache.RedisCache",
-#         "LOCATION": "redis://10.211.55.4:6379/2", # redis所在的主机的IP地址
-#         "OPTIONS": {
-#         "CLIENT_CLASS": "django_redis.client.DefaultClient",
-#         }
-#     }
-# }
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://redis:6379/2", # redis所在的主机的IP地址
+        "OPTIONS": {
+        "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+
 
 # # 配置session的存储到缓存中，即　使用的redis数据库
-# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-# SESSION_CACHE_ALIAS = "default"
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
+
 # 如下设置是默认的 不写的话这就是默认的设置 存储在数据库中
 # SESSION_ENGINE = "django.contrib.sessions.backends.db"
 

@@ -6,17 +6,17 @@ import time
 
 
 # 在worker 任务处理者一端加这么几句 初始化环境变量
-# import os
-# import django
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dailyfresh.settings")
-# django.setup()
+import os
+import django
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dailyfresh.settings")
+django.setup()
 
 # 创建一个Celery类的实例对象
 # broker 是一个中间人 这里写redis的数据地址
-app = Celery('celery_tasks.tasks',broker='redis://172.xx.xx.xxx:xxxx/x')
+app = Celery('celery_tasks.tasks',broker='redis://redis:6379/1')
 
 # 定义任务函数
-@app.tasks
+@app.task
 def send_register_active_email(to_email,username,token):
     '''发送激活邮件'''
     # 组织邮件信息
@@ -28,4 +28,4 @@ def send_register_active_email(to_email,username,token):
     username, token, token)
     send_status = send_mail(subject, message, sender, receiver, html_message=html_mesg)
     print(send_status)
-    time.sleep(5)
+    time.sleep(120)

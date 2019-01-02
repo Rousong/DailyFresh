@@ -11,7 +11,7 @@ from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from itsdangerous import SignatureExpired #这是一个异常
 from django.contrib.auth import authenticate,login,logout# 这是django对用户登录验证和保持用户登录的模块
 from utils.mixin import LoginRequiredMixin
-# from celery_tasks.tasks import send_register_active_email
+from celery_tasks.tasks import send_register_active_email
 # from django_redis import get_redis_connection
 import  re
 
@@ -111,19 +111,19 @@ class RegisterView(View):
         token = token.decode('utf8') #默认就是utf8 括号里也可以不写
 
 
-        # 发邮件
-        subject = '天天生鲜用户激活'
-        message = ""
-        sender = settings.EMAIL_FROM
-        receiver = [email]
-        html_mesg = "<h1>%s,欢迎您注册天天生鲜</h1>请点击以下链接激活您的账户</br><a href='http://127.0.0.1:8000/user/active/%s'>http://127.0.0.1:8000/user/active/%s</a>"%(username,token,token)
-        send_status = send_mail(subject,message,sender,receiver,html_message=html_mesg)
-        print(send_status)
-        # 返回一个应答 跳转到首页
+        # # 发邮件
+        # subject = '天天生鲜用户激活'
+        # message = ""
+        # sender = settings.EMAIL_FROM
+        # receiver = [email]
+        # html_mesg = "<h1>%s,欢迎您注册天天生鲜</h1>请点击以下链接激活您的账户</br><a href='http://127.0.0.1:8000/user/active/%s'>http://127.0.0.1:8000/user/active/%s</a>"%(username,token,token)
+        # send_status = send_mail(subject,message,sender,receiver,html_message=html_mesg)
+        # print(send_status)
+        # # 返回一个应答 跳转到首页
 
 
         # 如何使用异步celery处理延时任务的话 就调用这个函数
-        # send_register_active_email.delay(email,username,token)
+        send_register_active_email.delay(email,username,token)
 
         return redirect(reverse('goods:index'))
 
