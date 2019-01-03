@@ -21,3 +21,8 @@ https://www.docker.com/get-started
 
 通过 `127.0.0.1:8000`即可访问项目 
 
+## 运行flower（队列任务监视后台）
+>通过docker exec -i -t dailyfresh_web_1 bash
+
+**进入容器内部**
+>执行 flower --broker=redis://redis:6379/1 即可

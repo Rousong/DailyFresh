@@ -47,7 +47,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: ./run_celery.sh
+    command: celery -A celery_tasks.tasks worker
     environment:
       - C_FORCE_ROOT=true
     volumes:

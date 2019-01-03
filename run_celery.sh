@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # wait for db server to start
 sleep 3
