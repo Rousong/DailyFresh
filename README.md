@@ -42,3 +42,9 @@ https://www.docker.com/get-started
 >grant all privileges on *.* to fred@'%'identified by 'fred';//设置可以远程访问
 
 >flush privileges;//刷新权限
+
+查看用户情况可以 use mysql;
+>select user,host from user;
+
+### 关于mysql的utf-8的设置已经在compose文件中,启动mysql容器时已经默认是启动utf-8的mysql了
+> mysql>SHOW VARIABLES LIKE 'character_set_%';//查看数据库字符

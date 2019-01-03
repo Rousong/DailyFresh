@@ -1,13 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+{% load staticfiles %}
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>天天生鲜-首页</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/slide.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/slide.js' %}"></script>
 </head>
 <body>
 	<div class="header_con">
@@ -24,7 +25,7 @@
 				</div>
 				<div class="user_link fl">
 					<span>|</span>
-					<a href="user_center_info.html">用户中心</a>
+					<a href="/user/">用户中心</a>
 					<span>|</span>
 					<a href="cart.html">我的购物车</a>
 					<span>|</span>
@@ -35,7 +36,7 @@
 	</div>
 
 	<div class="search_bar clearfix">
-		<a href="index.html" class="logo fl"><img src="images/logo.png"></a>
+		<a href="index.html" class="logo fl"><img src="{% static 'images/logo.png' %}"></a>
 		<div class="search_con fl">
 			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
 			<input type="button" class="input_btn fr" name="" value="搜索">
@@ -70,18 +71,18 @@
 		</ul>
 		<div class="slide fl">
 			<ul class="slide_pics">
-				<li><img src="images/slide.jpg" alt="幻灯片"></li>
-				<li><img src="images/slide02.jpg" alt="幻灯片"></li>
-				<li><img src="images/slide03.jpg" alt="幻灯片"></li>
-				<li><img src="images/slide04.jpg" alt="幻灯片"></li>
+				<li><img src="{% static 'images/slide.jpg"' %} alt="幻灯片"></li>
+				<li><img src="{% static 'images/slide02.jpg' %}" alt="幻灯片"></li>
+				<li><img src="{% static 'images/slide03.jpg' %}" alt="幻灯片"></li>
+				<li><img src="{% static 'images/slide04.jpg' %}" alt="幻灯片"></li>
 			</ul>
 			<div class="prev"></div>
 			<div class="next"></div>
 			<ul class="points"></ul>
 		</div>
 		<div class="adv fl">
-			<a href="#"><img src="images/adv01.jpg"></a>
-			<a href="#"><img src="images/adv02.jpg"></a>
+			<a href="#"><img src="{% static 'images/adv01.jpg' %}"></a>
+			<a href="#"><img src="{% static 'images/adv02.jpg"' %}></a>
 		</div>
 	</div>
 
@@ -98,26 +99,26 @@
 		</div>
 
 		<div class="goods_con clearfix">
-			<div class="goods_banner fl"><img src="images/banner01.jpg"></div>
+			<div class="goods_banner fl"><img src="{% static 'images/banner01.jpg' %}"></div>
 			<ul class="goods_list fl">
 				<li>
 					<h4><a href="#">草莓</a></h4>
-					<a href="#"><img src="images/goods/goods003.jpg"></a>
+					<a href="#"><img src="{% static 'images/goods/goods003.jpg"' %}"></a>
 					<div class="prize">¥ 30.00</div>
 				</li>
 				<li>
 					<h4><a href="#">葡萄</a></h4>
-					<a href="#"><img src="images/goods/goods002.jpg"></a>
+					<a href="#"><img src="{% static 'images/goods/goods002.jpg' %}"></a>
 					<div class="prize">¥ 5.50</div>
 				</li>
 				<li>
 					<h4><a href="#">柠檬</a></h4>
-					<a href="#"><img src="images/goods/goods001.jpg"></a>
+					<a href="#"><img src="{% static 'images/goods/goods001.jpg' %}"></a>
 					<div class="prize">¥ 3.90</div>
 				</li>
 				<li>
 					<h4><a href="#">奇异果</a></h4>
-					<a href="#"><img src="images/goods/goods012.jpg"></a>
+					<a href="#"><img src="{% static 'images/goods/goods012.jpg' %}"></a>
 					<div class="prize">¥ 25.80</div>
 				</li>
 			</ul>
@@ -136,11 +137,11 @@
 		</div>
 
 		<div class="goods_con clearfix">
-			<div class="goods_banner fl"><img src="images/banner02.jpg"></div>
+			<div class="goods_banner fl"><img src="{% static 'images/banner02.jpg' %}"></div>
 			<ul class="goods_list fl">
 				<li>
 					<h4><a href="#">青岛野生海捕大青虾</a></h4>
-					<a href="#"><img src="images/goods/goods018.jpg"></a>
+					<a href="#"><img src="{% static 'images/goods/goods018.jpg' %}"></a>
 					<div class="prize">¥ 48.00</div>
 				</li>
 				<li>

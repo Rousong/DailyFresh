@@ -12,7 +12,7 @@ from itsdangerous import SignatureExpired #这是一个异常
 from django.contrib.auth import authenticate,login,logout# 这是django对用户登录验证和保持用户登录的模块
 from utils.mixin import LoginRequiredMixin
 from celery_tasks.tasks import send_register_active_email
-# from django_redis import get_redis_connection
+from django_redis import get_redis_connection
 import  re
 
 # Create your views here.
@@ -244,33 +244,38 @@ class UserInfoView(LoginRequiredMixin,View):
         # 获取用户的历史浏览记录
         # from redis import StrictRedis
         # conn = StrictRedis(host='172.16.179.142', db=10)
-        # con = get_redis_connection('default')
+        # 上面这两句可以用下面这一句封装(利用了django-redis)
+        con = get_redis_connection('default') # 这里的default就是settings里面的redis的default设置
+        # 这个con就是 上面的StrictRedis的实例对象
+
         history_key = 'history_%d' % user.id
         # 获取用户最新浏览的5个商品的id
-        # sku_ids = con.lrange(history_key, 0, 4)  # [4, 2, 1, 3]
+        sku_ids = con.lrange(history_key, 0, 4)  # [4, 2, 1, 3]
 
-        # 直接使用范围查询
-        # skus = GoodsSKU.objects.filter(id__in=sku_ids)
+        # 从数据库中查询用户浏览商品的具体信息,直接使用范围查询
+        skus = GoodsSKU.objects.filter(id__in=sku_ids)
         # skus_li = []
         # for sku_id in sku_ids:
         #     for sku in skus:
         #         if sku.id == sku_id:
         #             skus_li.append(sku)
-        # skus = []
-        # for sku_id in sku_ids:
-        #     # 根据id查询商品的信息
-        #     sku = GoodsSKU.objects.get(id=sku_id)
+
+        # 便利获取用户浏览的商品历史信息
+        goods_li = []
+        for id in sku_ids:
+            # 根据id查询商品的信息
+            goods = GoodsSKU.objects.get(id=id)
         #     # 追加到列表中
-        #     skus.append(sku)
-        #
-        # # 组织模板上下文
-        # context = {
-        #     'skus': skus,
-        #     'address': address,
-        #     'page': 'user'}
+            goods_li.append(goods)
+
+        # 组织模板上下文
+        context = {
+            'skus': skus,
+            'address': address,
+            'page': 'user'}
 
         # 除了我们给django传递的模板变量，django还会把user传递给模板文件
-        return  render(request,'user_center_info.html')
+        return  render(request,'user_center_info.html',context)
 
 # /user/order
 class UserOrderView(LoginRequiredMixin,View):

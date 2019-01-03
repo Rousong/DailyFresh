@@ -28,4 +28,4 @@ def send_register_active_email(to_email,username,token):
     username, token, token)
     send_status = send_mail(subject, message, sender, receiver, html_message=html_mesg)
     print(send_status)
-    time.sleep(120)
+    time.sleep(20)

@@ -18,13 +18,13 @@
 				<h3 class="common_title2">最近浏览</h3>
 				<div class="has_view_list">
 					<ul class="goods_type_list clearfix">
-                        {% for sku in skus %}
+                        {% for goods in goods_li %}
 				        <li>
-                            <a href="{% url 'goods:detail' sku.id %}"><img src="{{ sku.image.url }}"></a>
-                            <h4><a href="{% url 'goods:detail' sku.id %}">{{ sku.name }}</a></h4>
+                            <a href="{% url 'goods:detail' sku.id %}"><img src="{{ goods.image.url }}"></a>
+                            <h4><a href="{% url 'goods:detail' sku.id %}">{{ goods.name }}</a></h4>
                             <div class="operate">
-                                <span class="prize">￥{{ sku.price }}</span>
-                                <span class="unit">{{ sku.price }}/{{ sku.unite }}</span>
+                                <span class="prize">￥{{ goods.price }}</span>
+                                <span class="unit">{{ goods.price }}/{{ goods.unite }}</span>
                                 <a href="#" class="add_goods" title="加入购物车"></a>
                             </div>
                         </li>
