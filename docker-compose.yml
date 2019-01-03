@@ -4,8 +4,8 @@ services:
     image: mysql:5.6
     expose:
       - "3306"
-    #ports:
-     # - "9999:3306"  # ports是把右边的docker容器端口映射到左边宿主机端口
+    ports:
+      - "9999:3306"  # ports是把右边的docker容器端口映射到左边宿主机端口
       # expose的话就是暴露给 docker容器的端口 用links连接
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --init-connect='SET NAMES utf8mb4;' --innodb-flush-log-at-trx-commit=0
     volumes:

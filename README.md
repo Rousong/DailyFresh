@@ -22,7 +22,23 @@ https://www.docker.com/get-started
 通过 `127.0.0.1:8000`即可访问项目 
 
 ## 运行flower（队列任务监视后台）
->通过docker exec -i -t dailyfresh_web_1 bash
+>通过docker exec -i -t dailyfresh_web_1 bin/bash
 
 **进入容器内部**
 >执行 flower --broker=redis://redis:6379/1 即可
+
+
+## 设置远程登录docker内部mysql数据库
+>通过 docker exec -i -t dailyfresh_db_1 bin/bash
+进入数据库docker内
+
+>输入 mysql -uroot -p 进去mysql命令行模式
+
+创建一个mysql用户,并设置可以远程访问
+>grant usage on *.* to 'testuser'@'localhost' identified by 'testpassword';//创建用户fred密码ferd
+
+>select host,user,password from mysql.user where user='fred';//查看记录  
+
+>grant all privileges on *.* to fred@'%'identified by 'fred';//设置可以远程访问
+
+>flush privileges;//刷新权限

@@ -169,22 +169,25 @@ EMAIL_FROM = 'do_1024<do_1024@163.com>'
 # REDIS_DB = 0
 # REDIS_HOST = os.environ.get('REDIS_PORT_6379_TCP_ADDR', 'redis')
 #
+
+
+
 # # 配置ｃａｃｈｅ缓存到ｒｅｄｉｓ的2号数据库
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://redis:6379/2", # redis所在的主机的IP地址
         "OPTIONS": {
-        "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     }
 }
 
 
 
-# # 配置session的存储到缓存中，即　使用的redis数据库
+# 配置session的存储到缓存中，即　使用的redis数据库
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-SESSION_CACHE_ALIAS = "default"
+SESSION_CACHE_ALIAS = "default" # 之后的章节会讲
 
 # 如下设置是默认的 不写的话这就是默认的设置 存储在数据库中
 # SESSION_ENGINE = "django.contrib.sessions.backends.db"
