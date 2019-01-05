@@ -1,4 +1,4 @@
-
+# -*- coding:utf-8 -*-
 from django.shortcuts import render,redirect # redirect 重定向
 from django.core.urlresolvers import reverse
 from apps.user.models import User,Address

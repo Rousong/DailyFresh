@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 """
 Django settings for dailyfresh project.
 
@@ -194,3 +195,12 @@ SESSION_CACHE_ALIAS = "default" # 之后的章节会讲
 
 # 配置登录url的地址 默认的是 'accounts/login'
 LOGIN_URL = '/user/login'
+
+# 使用分布式文件系统和nginx协同配置
+# 指定Django上传文件的存储类
+DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
+# 指定fdfs的客户端的配置文件的路径
+FDFS_CLIENT_CONF = './utils/fdfs/client.conf'
+
+# 指定fdfs 服务器 nginx服务的地址
+FDFS_NGINX_URL = 'http://10.0.75.2:8080/' # nginx所在的主机IP地址

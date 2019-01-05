@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 from django.conf.urls import url
 #from apps.user import views
 from django.contrib.auth.decorators import login_required

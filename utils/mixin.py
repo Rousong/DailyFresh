@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 from django.contrib.auth.decorators import login_required
 
 class LoginRequiredMixin(object):
