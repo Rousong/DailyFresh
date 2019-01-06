@@ -58,6 +58,13 @@ services:
     links:
       - redis
 
+  dev_nginx:
+    image: nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
 
 
 
