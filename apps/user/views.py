@@ -1,6 +1,5 @@
-# -*- coding:utf-8 -*-
 from django.shortcuts import render,redirect # redirect 重定向
-from django.core.urlresolvers import reverse
+from django.urls import reverse # django2.0 把原来的 django.core.urlresolvers 包 更改为了 django.urls包
 from apps.user.models import User,Address
 from apps.goods.models import GoodsSKU
 from django.views.generic import View

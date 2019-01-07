@@ -1,10 +1,8 @@
-# -*- coding:utf-8 -*-
-
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from apps.order.models import OrderGoods
 from apps.goods.models import GoodsSKU, GoodsType, IndexGoodsBanner,IndexPromotionBanner,IndexTypeGoodsBanner
-from django.core.urlresolvers import reverse
+from django.urls import reverse # django2.0 把原来的 django.core.urlresolvers 包 更改为了 django.urls包
 from django_redis import get_redis_connection
 
 from django.core.paginator import Paginator
@@ -52,7 +50,10 @@ class IndexView(View):
         user = request.user
         # 获取登录用户的额购物车中的商品的数量
         cart_count = 0
-        if user.is_authenticated():
+
+        # is_authenticated这个是个属性而不是一个方法 之前写成 is_authenticated()会
+        # 报'bool' object is not callable的错误
+        if user.is_authenticated:
             # 用户已经登录
             conn = get_redis_connection('default')
             cart_key = 'cart_%d' % user.id

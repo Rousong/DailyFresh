@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 from django.core.files.storage import Storage
 from django.conf import settings
 from fdfs_client.client import Fdfs_client
@@ -26,6 +25,7 @@ class FDFSStorage(Storage):
 
         # 创建一个Fdfs_client对象
         client = Fdfs_client('./utils/fdfs/client.conf')
+        # client = Fdfs_client(self.client_conf)
 
         # 上传到fdfs的服务器中
         res =client.upload_by_buffer(content.read())
