@@ -16,7 +16,8 @@ class GoodsType(BaseModel):
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return self.name
+        # 因为python2.7的中文编码原因这里如果不加encode方法就会出错 2019/01/07
+        return self.name.encode('utf-8')
 
 class GoodsSKU(BaseModel):
     '''商品SKU模型类'''
