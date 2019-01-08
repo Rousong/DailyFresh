@@ -174,7 +174,7 @@ EMAIL_FROM = 'do_1024<do_1024@163.com>'
 #
 
 
-
+# Django支持的缓存有:Memcached(是Redis一样是内存型数据库)
 # # 配置ｃａｃｈｅ缓存到ｒｅｄｉｓ的2号数据库
 CACHES = {
     "default": {

@@ -27,7 +27,8 @@ class BaseModelAdmin(admin.ModelAdmin):
         # 清除首页的缓存数据
         cache.delete('index_page_data')
 
-
+# 下面这些的作用是继承上面的类,所有的管理类就都有这个方法了
+# 这样管理员修改任意一个类 就会刷新首页信息
 class GoodsSKUAdmin(BaseModelAdmin):
     pass
 

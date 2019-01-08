@@ -14,6 +14,10 @@ class IndexView(View):
     def get(self, request):
         """显示"""
         # 先判断缓存中是否有数据,没有数据不会报错返回NONE
+        # 把页面使用的数据放在缓存中,当再次使用这些数据时,先从缓存中获取,如果获取不到,再去查询数据库
+        # 减少数据库查询的次数
+
+        # 尝试从换从中获取数据
         context = cache.get('index_page_data')
 
         if context is None:
@@ -43,7 +47,7 @@ class IndexView(View):
                 'index_banner': index_banner,
                 'promotion_banner': promotion_banner,
             }
-            # 设置缓存数据,缓存的名字，内容，过期的时间
+            # 设置缓存数据,三个参数分别是:缓存的名字，内容，过期的时间
             cache.set('index_page_data', context, 3600)
 
         # 获取user
