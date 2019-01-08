@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'haystack',  # 注册全文检索框架
     'tinymce', # 富文本编辑器
     'apps.user', # 用户模块
     'apps.cart', # 购物车模块
@@ -50,12 +51,14 @@ INSTALLED_APPS = (
 
 )
 
-MIDDLEWARE_CLASSES = (
+# 注意!!!! 这是Django版本的问题，1.10之前，中间件的key为MIDDLEWARE_CLASSES, 1.10之后，为MIDDLEWARE。
+# 所以在开发环境和其他环境的版本不一致时，要特别小心，会有坑。
+MIDDLEWARE =  (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    #'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -171,7 +174,7 @@ EMAIL_FROM = 'do_1024<do_1024@163.com>'
 #
 
 
-
+# Django支持的缓存有:Memcached(是Redis一样是内存型数据库)
 # # 配置ｃａｃｈｅ缓存到ｒｅｄｉｓ的2号数据库
 CACHES = {
     "default": {
@@ -194,3 +197,29 @@ SESSION_CACHE_ALIAS = "default" # 之后的章节会讲
 
 # 配置登录url的地址 默认的是 'accounts/login'
 LOGIN_URL = '/user/login'
+
+# 使用分布式文件系统和nginx协同配置
+# 指定Django上传文件的存储类
+DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
+# 指定fdfs的客户端的配置文件的路径
+FDFS_CLIENT_CONF = './utils/fdfs/client.conf'
+
+# 指定fdfs 服务器 nginx服务的地址
+FDFS_NGINX_URL = 'http://10.0.75.2:8080/' # nginx所在的主机IP地址
+
+# 全文检索框架的配置
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        # 使用whoosh引擎
+        # 'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        # 索引文件路径
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    }
+}
+
+# 当添加、修改、删除数据时，自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+# 指定搜索结果每页显示的条数
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 12
