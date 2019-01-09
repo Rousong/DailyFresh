@@ -269,7 +269,7 @@ class UserInfoView(LoginRequiredMixin,View):
 
         # 组织模板上下文
         context = {
-            'skus': skus,
+            'goods_li': goods_li,
             'address': address,
             'page': 'user'}
 
