@@ -122,17 +122,18 @@ class DetailView(View):
     #     # 使用模板
         return render(request, 'detail.html',context)
 
+
 # 种类id 页码 排序方式
 # restful api -> 请求一种资源
 # /list?type_id=种类id&page=页码&sort=排序方式
 # /list/种类id/页码/排序方式
-# /list/种类id/页码?sort=排序方式
+# /list/种类id/页码?sort=排序方式  ←最终选择这一种
 class ListView(View):
     '''列表页'''
 
     def get(self, request, type_id, page):
         '''显示列表页'''
-        # 获取种类信息
+        # 获取种类信息(防止用户自主输入不存在的id)
         try:
             type = GoodsType.objects.get(id=type_id)
         except GoodsType.DoesNotExist:
@@ -163,6 +164,7 @@ class ListView(View):
         try:
             page = int(page)
         except Exception as e:
+            # 如果不是数字,不报错 而是直接默认是第一页
             page = 1
 
         if page > paginator.num_pages:
