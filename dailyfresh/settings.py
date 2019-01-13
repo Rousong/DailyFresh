@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'haystack',  # 注册全文检索框架
+    'haystack',  # 注册全文检索框架 要相对应的设置haystack的设置项 ↓
     'tinymce', # 富文本编辑器
     'apps.user', # 用户模块
     'apps.cart', # 购物车模块
@@ -207,18 +207,18 @@ FDFS_CLIENT_CONF = './utils/fdfs/client.conf'
 # 指定fdfs 服务器 nginx服务的地址
 FDFS_NGINX_URL = 'http://10.0.75.2:8080/' # nginx所在的主机IP地址
 
-# 全文检索框架的配置
+# 全文检索框架的配置  haystack可以对应四种搜索引擎 这里我们用whoosh
 HAYSTACK_CONNECTIONS = {
     'default': {
         # 使用whoosh引擎
-        # 'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        # 'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',启用中文分词的话要去修改文件启用jieba
         'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        # 索引文件路径
+        # 索引文件路径 这个文件不用自己去建立 当生成索引文件的时候自动生成
         'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
     }
 }
 
-# 当添加、修改、删除数据时，自动生成索引
+# ※※※当添加、修改、删除数据时，自动生成索引※※※
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 # 指定搜索结果每页显示的条数

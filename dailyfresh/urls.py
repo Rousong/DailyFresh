@@ -19,7 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^tinymce/', include('tinymce.urls')),  # 富文本编辑器
-    url(r'^search', include('haystack.urls')),  # 全文检索框架
+    url(r'^search', include('haystack.urls')),  # 全文检索框架 配置url
     url(r'^user/', include(('user.urls', 'user'))),  # 用户模块
     url(r'^cart/', include(('cart.urls', 'cart'))),  # 购物车模块
     url(r'^order/', include(('order.urls', 'order'))),  # 订单模块
