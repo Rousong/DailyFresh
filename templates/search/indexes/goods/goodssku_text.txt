@@ -1,4 +1,5 @@
-# .\templates\search\index\goods\goodssku_text.txt 这个文件和路径都是固定的 文件名是类名的小写
+# .\templates\search\indexes\goods\goodssku_text.txt 这个文件和路径都是固定的 文件名是类名的小写
+# 昨天写错了路径 indexes是对的 要加复数
 # 指定根据表中的哪些字段建立索引数据
 {{ object.name }} # 根据商品的名称建立索引
 {{ object.desc }} # 根据商品的简介建立索引

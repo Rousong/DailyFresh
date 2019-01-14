@@ -116,7 +116,7 @@
             count = parseInt(count)
             amount = price*count
             // 设置商品的总价
-            $('.total').children('em').text(amount.toFixed(2)+'元')
+            $('.total').children('em').text(amount.toFixed(2)+'元') //toFixed是保留两位小数
         }
         // 增加商品的数量
         $('.add').click(function () {
