@@ -149,6 +149,8 @@ class OrderCommitView(View):
                 for i in range(3):
                     # 获取商品的信息
                     try:
+                        # 悲观锁:select *from df_goods_sku where id=sku for update;
+                        # sku = GoodsSKU.objects.select_for_update().get(id=sku_id)
                         sku = GoodsSKU.objects.get(id=sku_id)
                     except:
                         # 商品不存在
@@ -164,6 +166,7 @@ class OrderCommitView(View):
                         return JsonResponse({'res': 6, 'errmsg': '商品库存不足'})
 
                     # 更新商品的库存和销量
+                    # 乐观锁
                     origin_stock = sku.stock
                     new_stock = origin_stock - int(count)
                     new_sales = sku.sales + int(count)
