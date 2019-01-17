@@ -36,7 +36,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=0
     ports:
-      - "8000:8000"
+      - "9000:8000"
       - "5555:5555"
     depends_on:
       - db
