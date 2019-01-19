@@ -28,7 +28,7 @@ SECRET_KEY = '_6*tf_-rjd-6*2%rw&k3f+lyw35h#z+hm6q3*$nxaid*q*3w=g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -133,7 +133,8 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
     # 这个的意思是字符串拼接 BASEDIR是项目目录 后面可以添加拼接目录
 ]
-
+# 指定收集静态文件的路径
+#STATIC_ROOT = '/app/static_col/'
 
 # 富文本编辑器的设置
 TINYMCE_DEFAULT_CONFIG ={

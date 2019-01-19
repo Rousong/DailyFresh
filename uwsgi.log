@@ -1,0 +1,1598 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 09:30:33 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42913 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55616ae5b830
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file app/dailyfresh/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 60)
+spawned uWSGI worker 1 (pid: 61, cores: 2)
+spawned uWSGI worker 2 (pid: 62, cores: 2)
+spawned uWSGI worker 3 (pid: 63, cores: 2)
+spawned uWSGI worker 4 (pid: 64, cores: 2)
+spawned uWSGI http 1 (pid: 65)
+--- no python application found, check your startup logs for errors ---
+[pid: 63|app: -1|req: -1/1] 172.21.0.1 () {38 vars in 770 bytes} [Sat Jan 19 09:30:50 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 63|app: -1|req: -1/2] 172.21.0.1 () {38 vars in 749 bytes} [Sat Jan 19 09:30:51 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 63|app: -1|req: -1/3] 172.21.0.1 () {38 vars in 780 bytes} [Sat Jan 19 09:31:51 2019] GET /index => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 62|app: -1|req: -1/4] 172.21.0.1 () {38 vars in 754 bytes} [Sat Jan 19 09:31:51 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 63|app: -1|req: -1/5] 172.21.0.1 () {38 vars in 770 bytes} [Sat Jan 19 09:31:56 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 63|app: -1|req: -1/6] 172.21.0.1 () {38 vars in 749 bytes} [Sat Jan 19 09:31:57 2019] GET /favicon.ico => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 09:39:29 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40165 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55e517207830
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e517207830 pid: 29 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 29)
+spawned uWSGI worker 1 (pid: 31, cores: 2)
+spawned uWSGI worker 2 (pid: 32, cores: 2)
+spawned uWSGI worker 3 (pid: 34, cores: 2)
+spawned uWSGI worker 4 (pid: 35, cores: 2)
+spawned uWSGI http 1 (pid: 37)
+Not Found: /
+[pid: 35|app: 0|req: 1/1] 172.21.0.1 () {40 vars in 801 bytes} [Sat Jan 19 17:39:33 2019] GET / => generated 3034 bytes in 673 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 35|app: 0|req: 2/2] 172.21.0.1 () {38 vars in 749 bytes} [Sat Jan 19 17:39:35 2019] GET /favicon.ico => generated 3085 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 35|app: 0|req: 3/3] 172.21.0.1 () {38 vars in 780 bytes} [Sat Jan 19 17:39:39 2019] GET /index => generated 6859 bytes in 268 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /static/css/reset.css
+[pid: 35|app: 0|req: 4/4] 172.21.0.1 () {38 vars in 751 bytes} [Sat Jan 19 17:39:39 2019] GET /static/css/reset.css => generated 3112 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/js/jquery-1.12.4.min.js
+[pid: 35|app: 0|req: 5/5] 172.21.0.1 () {38 vars in 756 bytes} [Sat Jan 19 17:39:39 2019] GET /static/js/jquery-1.12.4.min.js => generated 3142 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118
+Not Found: /static/js/slide.js
+[pid: 31|app: 0|req: 2/6] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 17:39:39 2019] GET /static/js/slide.js => generated 3106 bytes in 740 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 31|app: 0|req: 2/7] 10.0.75.1 () {38 vars in 749 bytes} [Sat Jan 19 17:39:39 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 3196 bytes in 755 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/jquery-ui.min.js
+[pid: 32|app: 0|req: 2/8] 172.21.0.1 () {38 vars in 748 bytes} [Sat Jan 19 17:39:39 2019] GET /static/js/jquery-ui.min.js => generated 3130 bytes in 760 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/css/main.css
+[pid: 32|app: 0|req: 2/9] 172.21.0.1 () {38 vars in 749 bytes} [Sat Jan 19 17:39:39 2019] GET /static/css/main.css => generated 3109 bytes in 781 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222
+Not Found: /static/js/jquery-ui.min.js
+[pid: 35|app: 0|req: 6/10] 172.21.0.1 () {38 vars in 748 bytes} [Sat Jan 19 17:39:40 2019] GET /static/js/jquery-ui.min.js => generated 3130 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.png
+Not Found: /static/js/slide.js
+[pid: 35|app: 0|req: 7/11] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 17:39:40 2019] GET /static/js/slide.js => generated 3106 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 34|app: 0|req: 2/13] 10.0.75.1 () {38 vars in 749 bytes} [Sat Jan 19 17:39:40 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 3196 bytes in 54 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 34|app: 0|req: 2/13] 172.21.0.1 () {38 vars in 776 bytes} [Sat Jan 19 17:39:39 2019] GET /static/images/logo.png => generated 3118 bytes in 798 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800
+[pid: 32|app: 0|req: 3/14] 10.0.75.1 () {38 vars in 749 bytes} [Sat Jan 19 17:39:40 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 3196 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194
+[pid: 35|app: 0|req: 8/15] 10.0.75.1 () {38 vars in 749 bytes} [Sat Jan 19 17:39:40 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 3196 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799
+Not Found: /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731
+[pid: 32|app: 0|req: 4/16] 10.0.75.1 () {38 vars in 749 bytes} [Sat Jan 19 17:39:40 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 3196 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 34|app: 0|req: 3/17] 10.0.75.1 () {36 vars in 691 bytes} [Sat Jan 19 17:39:40 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 3196 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309
+Not Found: /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441
+[pid: 31|app: 0|req: 4/18] 10.0.75.1 () {38 vars in 749 bytes} [Sat Jan 19 17:39:40 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 3196 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 31|app: 0|req: 4/19] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 17:39:40 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 3196 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 10:06:17 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:33695 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x558e0c3e8830
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x558e0c3e8830 pid: 38 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 38)
+spawned uWSGI worker 1 (pid: 40, cores: 2)
+spawned uWSGI worker 2 (pid: 41, cores: 2)
+spawned uWSGI worker 3 (pid: 43, cores: 2)
+spawned uWSGI worker 4 (pid: 44, cores: 2)
+spawned uWSGI http 1 (pid: 46)
+[pid: 44|app: 0|req: 1/1] 172.21.0.1 () {38 vars in 780 bytes} [Sat Jan 19 18:06:33 2019] GET /index => generated 6859 bytes in 660 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 44|app: 0|req: 3/2] 172.21.0.1 () {38 vars in 751 bytes} [Sat Jan 19 18:06:34 2019] GET /static/css/reset.css => generated 94 bytes in 42 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 44|app: 0|req: 3/3] 172.21.0.1 () {38 vars in 749 bytes} [Sat Jan 19 18:06:34 2019] GET /static/css/main.css => generated 93 bytes in 34 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 44|app: 0|req: 4/4] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 18:06:35 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 40|app: 0|req: 2/6] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 18:06:34 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 1010 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 40|app: 0|req: 2/6] 172.21.0.1 () {38 vars in 776 bytes} [Sat Jan 19 18:06:34 2019] GET /static/images/logo.png => generated 96 bytes in 997 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 43|app: 0|req: 1/7] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 18:06:34 2019] GET /static/js/slide.js => generated 92 bytes in 998 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 40|app: 0|req: 3/8] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 18:06:35 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 44|app: 0|req: 5/9] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 18:06:35 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 43|app: 0|req: 2/10] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 18:06:35 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 44|app: 0|req: 6/11] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 18:06:35 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 40|app: 0|req: 5/12] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 18:06:35 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 40|app: 0|req: 5/13] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 18:06:35 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 41|app: 0|req: 2/14] 172.21.0.1 () {38 vars in 756 bytes} [Sat Jan 19 18:06:34 2019] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 1118 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 41|app: 0|req: 2/15] 172.21.0.1 () {38 vars in 748 bytes} [Sat Jan 19 18:06:34 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 1117 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 44|app: 0|req: 7/16] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 18:06:35 2019] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 44|app: 0|req: 8/17] 172.21.0.1 () {38 vars in 770 bytes} [Sat Jan 19 18:06:40 2019] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 43|app: 0|req: 3/18] 172.21.0.1 () {38 vars in 780 bytes} [Sat Jan 19 18:06:44 2019] GET /index => generated 6859 bytes in 192 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 44|app: 0|req: 9/19] 172.21.0.1 () {38 vars in 751 bytes} [Sat Jan 19 18:06:44 2019] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 40|app: 0|req: 6/20] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:06:44 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 44|app: 0|req: 10/21] 172.21.0.1 () {38 vars in 748 bytes} [Sat Jan 19 18:06:44 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 41|app: 0|req: 4/22] 172.21.0.1 () {38 vars in 749 bytes} [Sat Jan 19 18:06:44 2019] GET /static/css/main.css => generated 93 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 43|app: 0|req: 4/23] 172.21.0.1 () {38 vars in 756 bytes} [Sat Jan 19 18:06:44 2019] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 41|app: 0|req: 4/24] 172.21.0.1 () {38 vars in 776 bytes} [Sat Jan 19 18:06:44 2019] GET /static/images/logo.png => generated 96 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 44|app: 0|req: 11/25] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 18:06:44 2019] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 43|app: 0|req: 5/26] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:06:44 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 44|app: 0|req: 12/27] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:06:44 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 44|app: 0|req: 13/28] 172.21.0.1 () {38 vars in 748 bytes} [Sat Jan 19 18:06:44 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 40|app: 0|req: 7/29] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:06:44 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 41|app: 0|req: 5/30] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:06:44 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 43|app: 0|req: 6/31] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 18:06:44 2019] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 44|app: 0|req: 14/32] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:06:44 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 43|app: 0|req: 7/33] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:06:44 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 44|app: 0|req: 15/34] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:06:44 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 10:13:41 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40321 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x563f81cb2830
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x563f81cb2830 pid: 44 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 44)
+spawned uWSGI worker 1 (pid: 46, cores: 2)
+spawned uWSGI worker 2 (pid: 47, cores: 2)
+spawned uWSGI worker 3 (pid: 49, cores: 2)
+spawned uWSGI worker 4 (pid: 50, cores: 2)
+spawned uWSGI http 1 (pid: 52)
+[pid: 50|app: 0|req: 1/1] 172.21.0.1 () {38 vars in 829 bytes} [Sat Jan 19 18:14:05 2019] GET / => generated 74 bytes in 442 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 50|app: 0|req: 2/2] 172.21.0.1 () {38 vars in 808 bytes} [Sat Jan 19 18:14:05 2019] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 50|app: 0|req: 3/3] 172.21.0.1 () {38 vars in 839 bytes} [Sat Jan 19 18:14:10 2019] GET /index => generated 6859 bytes in 131 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 50|app: 0|req: 4/4] 172.21.0.1 () {38 vars in 810 bytes} [Sat Jan 19 18:14:10 2019] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 50|app: 0|req: 5/5] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:14:10 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 50|app: 0|req: 6/6] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:14:10 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 50|app: 0|req: 7/7] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:14:10 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 50|app: 0|req: 8/8] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:14:10 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 50|app: 0|req: 9/9] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:14:10 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 50|app: 0|req: 10/10] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:14:10 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 50|app: 0|req: 11/11] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:14:10 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 50|app: 0|req: 12/12] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 18:14:10 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 47|app: 0|req: 2/13] 172.21.0.1 () {38 vars in 807 bytes} [Sat Jan 19 18:14:10 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 875 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 47|app: 0|req: 2/14] 172.21.0.1 () {38 vars in 835 bytes} [Sat Jan 19 18:14:10 2019] GET /static/images/logo.png => generated 96 bytes in 863 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 49|app: 0|req: 1/15] 172.21.0.1 () {38 vars in 791 bytes} [Sat Jan 19 18:14:10 2019] GET /static/js/slide.js => generated 92 bytes in 872 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 46|app: 0|req: 2/17] 172.21.0.1 () {38 vars in 815 bytes} [Sat Jan 19 18:14:10 2019] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 888 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 46|app: 0|req: 2/17] 172.21.0.1 () {38 vars in 808 bytes} [Sat Jan 19 18:14:10 2019] GET /static/css/main.css => generated 93 bytes in 892 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 49|app: 0|req: 2/18] 172.21.0.1 () {38 vars in 807 bytes} [Sat Jan 19 18:14:11 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 50|app: 0|req: 13/19] 172.21.0.1 () {38 vars in 791 bytes} [Sat Jan 19 18:14:11 2019] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:09:27 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40621 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55747f4f3830
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55747f4f3830 pid: 32 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 32)
+spawned uWSGI worker 1 (pid: 34, cores: 2)
+spawned uWSGI worker 2 (pid: 35, cores: 2)
+spawned uWSGI worker 3 (pid: 37, cores: 2)
+spawned uWSGI worker 4 (pid: 38, cores: 2)
+spawned uWSGI http 1 (pid: 40)
+[pid: 37|app: 0|req: 1/1] 172.21.0.1 () {38 vars in 828 bytes} [Sat Jan 19 20:09:40 2019] GET / => generated 74 bytes in 581 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 37|app: 0|req: 2/2] 172.21.0.1 () {38 vars in 839 bytes} [Sat Jan 19 20:09:47 2019] GET /index => generated 6859 bytes in 481 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 37|app: 0|req: 3/3] 172.21.0.1 () {38 vars in 791 bytes} [Sat Jan 19 20:09:47 2019] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 2/4] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:09:47 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 742 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 35|app: 0|req: 2/5] 172.21.0.1 () {38 vars in 815 bytes} [Sat Jan 19 20:09:47 2019] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 745 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 3/6] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:09:48 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 37|app: 0|req: 4/7] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:09:48 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 37|app: 0|req: 5/8] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:09:48 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 4/9] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:09:48 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 5/10] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:09:48 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 35|app: 0|req: 6/11] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:09:48 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 7/12] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:09:48 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 38|app: 0|req: 2/13] 172.21.0.1 () {38 vars in 810 bytes} [Sat Jan 19 20:09:47 2019] GET /static/css/reset.css => generated 94 bytes in 871 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 38|app: 0|req: 2/14] 172.21.0.1 () {38 vars in 807 bytes} [Sat Jan 19 20:09:47 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 870 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 34|app: 0|req: 2/15] 172.21.0.1 () {38 vars in 835 bytes} [Sat Jan 19 20:09:47 2019] GET /static/images/logo.png => generated 96 bytes in 878 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 34|app: 0|req: 2/16] 172.21.0.1 () {38 vars in 808 bytes} [Sat Jan 19 20:09:47 2019] GET /static/css/main.css => generated 93 bytes in 892 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 8/17] 172.21.0.1 () {38 vars in 807 bytes} [Sat Jan 19 20:09:48 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 37|app: 0|req: 6/18] 172.21.0.1 () {38 vars in 791 bytes} [Sat Jan 19 20:09:48 2019] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:16:59 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39745 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x5602b7934810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5602b7934810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 27, cores: 2)
+spawned uWSGI worker 2 (pid: 28, cores: 2)
+spawned uWSGI worker 3 (pid: 29, cores: 2)
+spawned uWSGI worker 4 (pid: 31, cores: 2)
+spawned uWSGI http 1 (pid: 32)
+[pid: 28|app: 0|req: 1/1] 172.21.0.1 () {38 vars in 780 bytes} [Sat Jan 19 20:20:01 2019] GET /index => generated 6859 bytes in 734 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 3/2] 172.21.0.1 () {38 vars in 751 bytes} [Sat Jan 19 20:20:01 2019] GET /static/css/reset.css => generated 94 bytes in 21 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 3/3] 172.21.0.1 () {38 vars in 756 bytes} [Sat Jan 19 20:20:01 2019] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 2/5] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:20:01 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 841 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 2/5] 172.21.0.1 () {38 vars in 776 bytes} [Sat Jan 19 20:20:01 2019] GET /static/images/logo.png => generated 96 bytes in 825 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 4/6] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:20:02 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 5/7] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:20:02 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 3/8] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:20:02 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 6/9] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:20:02 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 7/10] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:20:02 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 4/11] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:20:02 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 2/12] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:20:02 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 78 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 2/13] 172.21.0.1 () {38 vars in 748 bytes} [Sat Jan 19 20:20:01 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 902 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 31|app: 0|req: 2/14] 172.21.0.1 () {38 vars in 749 bytes} [Sat Jan 19 20:20:01 2019] GET /static/css/main.css => generated 93 bytes in 1056 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 31|app: 0|req: 2/15] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 20:20:01 2019] GET /static/js/slide.js => generated 92 bytes in 1061 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 3/16] 172.21.0.1 () {38 vars in 748 bytes} [Sat Jan 19 20:20:03 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 5/17] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 20:20:03 2019] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:20:48 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34585 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55b095b20810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55b095b20810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 33, cores: 2)
+spawned uWSGI worker 2 (pid: 34, cores: 2)
+spawned uWSGI worker 3 (pid: 35, cores: 2)
+spawned uWSGI worker 4 (pid: 36, cores: 2)
+spawned uWSGI http 1 (pid: 37)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:21:54 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41059 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55cf59ec2810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55cf59ec2810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 37, cores: 2)
+spawned uWSGI worker 2 (pid: 38, cores: 2)
+spawned uWSGI worker 3 (pid: 39, cores: 2)
+spawned uWSGI worker 4 (pid: 40, cores: 2)
+spawned uWSGI http 1 (pid: 41)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:23:44 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:44563 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55e793067810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e793067810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 37, cores: 2)
+spawned uWSGI worker 2 (pid: 38, cores: 2)
+spawned uWSGI worker 3 (pid: 39, cores: 2)
+spawned uWSGI worker 4 (pid: 40, cores: 2)
+spawned uWSGI http 1 (pid: 41)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:25:44 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41027 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55e4497bb810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e4497bb810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 37, cores: 2)
+spawned uWSGI worker 2 (pid: 38, cores: 2)
+spawned uWSGI worker 3 (pid: 39, cores: 2)
+spawned uWSGI worker 4 (pid: 40, cores: 2)
+spawned uWSGI http 1 (pid: 41)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:27:34 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41027 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55c9e5ca6810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c9e5ca6810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 36, cores: 2)
+spawned uWSGI worker 2 (pid: 37, cores: 2)
+spawned uWSGI worker 3 (pid: 38, cores: 2)
+spawned uWSGI worker 4 (pid: 39, cores: 2)
+spawned uWSGI http 1 (pid: 40)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:29:57 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39393 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x557fd990a810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x557fd990a810 pid: 21 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21)
+spawned uWSGI worker 1 (pid: 38, cores: 2)
+spawned uWSGI worker 2 (pid: 39, cores: 2)
+spawned uWSGI worker 3 (pid: 40, cores: 2)
+spawned uWSGI worker 4 (pid: 41, cores: 2)
+spawned uWSGI http 1 (pid: 42)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:31:03 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36167 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x56252dd8f810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56252dd8f810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 27, cores: 2)
+spawned uWSGI worker 2 (pid: 28, cores: 2)
+spawned uWSGI worker 3 (pid: 30, cores: 2)
+spawned uWSGI worker 4 (pid: 31, cores: 2)
+spawned uWSGI http 1 (pid: 32)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:34:50 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34091 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55b08e365810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55b08e365810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 27, cores: 2)
+spawned uWSGI worker 2 (pid: 28, cores: 2)
+spawned uWSGI worker 3 (pid: 29, cores: 2)
+spawned uWSGI worker 4 (pid: 30, cores: 2)
+spawned uWSGI http 1 (pid: 31)
+[pid: 28|app: 0|req: 1/1] 172.21.0.1 () {36 vars in 646 bytes} [Sat Jan 19 20:42:15 2019] GET /index => generated 6850 bytes in 632 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 3/2] 172.21.0.1 () {36 vars in 615 bytes} [Sat Jan 19 20:42:16 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 3/3] 172.21.0.1 () {36 vars in 623 bytes} [Sat Jan 19 20:42:16 2019] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 19 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 2/4] 172.21.0.1 () {36 vars in 616 bytes} [Sat Jan 19 20:42:16 2019] GET /static/css/main.css => generated 93 bytes in 731 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 2/5] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:42:16 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 735 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 4/6] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:42:17 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 2/7] 172.21.0.1 () {36 vars in 643 bytes} [Sat Jan 19 20:42:16 2019] GET /static/images/logo.png => generated 96 bytes in 805 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 2/8] 172.21.0.1 () {36 vars in 599 bytes} [Sat Jan 19 20:42:16 2019] GET /static/js/slide.js => generated 92 bytes in 805 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 5/9] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:42:17 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 3/10] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:42:17 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 4/11] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:42:17 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 5/12] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:42:17 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 6/13] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:42:17 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 2/14] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:42:17 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 160 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 2/15] 172.21.0.1 () {36 vars in 617 bytes} [Sat Jan 19 20:42:16 2019] GET /static/css/reset.css => generated 94 bytes in 910 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 6/16] 172.21.0.1 () {36 vars in 615 bytes} [Sat Jan 19 20:42:17 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 7/17] 172.21.0.1 () {36 vars in 599 bytes} [Sat Jan 19 20:42:17 2019] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 3/18] 172.21.0.1 () {38 vars in 690 bytes} [Sat Jan 19 20:42:19 2019] GET /user/ => generated 0 bytes in 23 msecs (HTTP/1.1 302) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 4/19] 172.21.0.1 () {38 vars in 723 bytes} [Sat Jan 19 20:42:19 2019] GET /user/login?next=/user/ => generated 2124 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 5/21] 172.21.0.1 () {38 vars in 722 bytes} [Sat Jan 19 20:42:19 2019] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 7/21] 172.21.0.1 () {38 vars in 724 bytes} [Sat Jan 19 20:42:19 2019] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 8/22] 172.21.0.1 () {38 vars in 753 bytes} [Sat Jan 19 20:42:19 2019] GET /static/images/logo02.png => generated 98 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 6/23] 172.21.0.1 () {40 vars in 816 bytes} [Sat Jan 19 20:42:24 2019] GET /user/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:44:31 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:33737 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x561873b97810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x561873b97810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 27, cores: 2)
+spawned uWSGI worker 2 (pid: 28, cores: 2)
+spawned uWSGI worker 3 (pid: 29, cores: 2)
+spawned uWSGI worker 4 (pid: 30, cores: 2)
+spawned uWSGI http 1 (pid: 31)
+[pid: 28|app: 0|req: 1/1] 172.21.0.1 () {38 vars in 735 bytes} [Sat Jan 19 20:45:02 2019] GET /index => generated 6850 bytes in 628 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 3/2] 172.21.0.1 () {38 vars in 705 bytes} [Sat Jan 19 20:45:03 2019] GET /static/css/main.css => generated 93 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 3/3] 172.21.0.1 () {38 vars in 712 bytes} [Sat Jan 19 20:45:03 2019] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 1/4] 172.21.0.1 () {38 vars in 732 bytes} [Sat Jan 19 20:45:03 2019] GET /static/images/logo.png => generated 96 bytes in 592 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 4/5] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:03 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 2/6] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:03 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 5/7] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:03 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 6/8] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:03 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 3/9] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:03 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 4/10] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:03 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 5/11] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:03 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 2/12] 172.21.0.1 () {38 vars in 707 bytes} [Sat Jan 19 20:45:03 2019] GET /static/css/reset.css => generated 94 bytes in 844 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 2/13] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:03 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 851 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 2/15] 172.21.0.1 () {38 vars in 688 bytes} [Sat Jan 19 20:45:03 2019] GET /static/js/slide.js => generated 92 bytes in 877 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 2/15] 172.21.0.1 () {38 vars in 704 bytes} [Sat Jan 19 20:45:03 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 882 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 7/16] 172.21.0.1 () {38 vars in 688 bytes} [Sat Jan 19 20:45:04 2019] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 3/17] 172.21.0.1 () {38 vars in 726 bytes} [Sat Jan 19 20:45:07 2019] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 3/18] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:15 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 6/19] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:15 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 4/20] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:15 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 4/21] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:15 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 5/22] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:15 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 6/23] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:15 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 6/24] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:15 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 6/25] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:45:15 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 7/26] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:45:20 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 7/27] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:45:20 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 8/28] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:45:20 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 8/29] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:45:20 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 8/30] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:45:20 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 8/31] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:45:20 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 9/32] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:45:20 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 10/33] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:45:20 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 9/34] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:47:12 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 11/35] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:47:12 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 8/36] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:47:12 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 10/37] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:47:12 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 9/38] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:47:12 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 12/39] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:47:12 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 10/40] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:47:12 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 11/41] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:47:12 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 11/42] 10.0.75.1 () {36 vars in 696 bytes} [Sat Jan 19 20:47:58 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 12/43] 10.0.75.1 () {36 vars in 696 bytes} [Sat Jan 19 20:48:54 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 13/44] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:49:15 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 14/45] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:49:15 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 13/46] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:49:15 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 15/47] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:49:15 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 12/48] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:49:15 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 9/49] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:49:15 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 16/50] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:49:15 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 13/51] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:49:15 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 14/52] 10.0.75.1 () {36 vars in 696 bytes} [Sat Jan 19 20:49:27 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 17/53] 10.0.75.1 () {38 vars in 751 bytes} [Sat Jan 19 20:49:27 2019] GET /M00/M00/00/00/wKhBA1w3PamAUxapAAA5OS4Kl4c2976888 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 14/54] 10.0.75.1 () {38 vars in 751 bytes} [Sat Jan 19 20:49:27 2019] GET /M00/M00/00/00/wKhBA1w3PZCAA1PBAAAkaP_7_183235388 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 15/55] 172.21.0.1 () {38 vars in 839 bytes} [Sat Jan 19 20:49:33 2019] GET /index => generated 6859 bytes in 152 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 10/56] 172.21.0.1 () {38 vars in 810 bytes} [Sat Jan 19 20:49:33 2019] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 16/57] 172.21.0.1 () {38 vars in 808 bytes} [Sat Jan 19 20:49:33 2019] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 18/58] 172.21.0.1 () {38 vars in 807 bytes} [Sat Jan 19 20:49:33 2019] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 16/59] 172.21.0.1 () {38 vars in 835 bytes} [Sat Jan 19 20:49:33 2019] GET /static/images/logo.png => generated 96 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 16/60] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:49:33 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 12/61] 172.21.0.1 () {38 vars in 815 bytes} [Sat Jan 19 20:49:33 2019] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 12/62] 172.21.0.1 () {38 vars in 791 bytes} [Sat Jan 19 20:49:33 2019] GET /static/js/slide.js => generated 92 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 18/63] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:49:33 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 19/64] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:49:33 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 19/65] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:49:33 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 18/66] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:49:33 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 18/67] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:49:33 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 13/68] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:49:33 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 14/69] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:49:33 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 20/70] 10.0.75.1 () {36 vars in 696 bytes} [Sat Jan 19 20:49:35 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 15/71] 10.0.75.1 () {36 vars in 696 bytes} [Sat Jan 19 20:49:35 2019] GET /M00/M00/00/00/wKhBA1w3PamAUxapAAA5OS4Kl4c2976888 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 19/72] 10.0.75.1 () {36 vars in 696 bytes} [Sat Jan 19 20:49:35 2019] GET /M00/M00/00/00/wKhBA1w3PZCAA1PBAAAkaP_7_183235388 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 20/73] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:50:19 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 16/74] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:50:19 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 21/75] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:50:19 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 19/76] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:50:19 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 22/77] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:50:19 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 23/78] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:50:19 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 17/79] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:50:19 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 18/80] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:50:19 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 20/81] 10.0.75.1 () {36 vars in 696 bytes} [Sat Jan 19 20:50:28 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 24/82] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:50:59 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 21/83] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:51:00 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 21/84] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:51:00 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 25/85] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:51:00 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 22/86] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:51:00 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 29|app: 0|req: 20/87] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:51:00 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 20/88] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:51:00 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 26/89] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:51:00 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 27/90] 10.0.75.1 () {36 vars in 695 bytes} [Sat Jan 19 20:51:36 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 22/91] 10.0.75.1 () {36 vars in 697 bytes} [Sat Jan 19 20:53:26 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 23/92] 172.21.0.1 () {36 vars in 550 bytes} [Sat Jan 19 20:54:57 2019] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 24/93] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:55:38 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 28/94] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:55:38 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 27|app: 0|req: 25/95] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:55:38 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 26/96] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:55:38 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 29/97] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:55:38 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 28|app: 0|req: 30/98] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:55:38 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 31/99] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:55:38 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 23/100] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:55:38 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 24/101] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:55:47 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 25/102] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:55:47 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 27/103] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:55:47 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 28/104] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:55:47 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 32/105] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:55:47 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 29|app: 0|req: 21/106] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:55:47 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 26/107] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:55:47 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 27/108] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 20:55:47 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 28/109] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:57:30 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 29/110] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:57:30 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 33/111] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:57:30 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 30/112] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:57:30 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 29/113] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:57:30 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 28|app: 0|req: 34/114] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:57:30 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 30|app: 0|req: 30/115] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:57:30 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 122 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 27|app: 0|req: 31/116] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 20:57:30 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 30|app: 0|req: 31/117] 10.0.75.1 () {36 vars in 695 bytes} [Sat Jan 19 20:57:33 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 122 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 12:59:26 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:46181 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x556e20442810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556e20442810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 37, cores: 2)
+spawned uWSGI worker 2 (pid: 38, cores: 2)
+spawned uWSGI worker 3 (pid: 39, cores: 2)
+spawned uWSGI worker 4 (pid: 40, cores: 2)
+spawned uWSGI http 1 (pid: 41)
+Not Found: /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800
+Not Found: /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118
+[pid: 39|app: 0|req: 2/1] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:03 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 3196 bytes in 871 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 39|app: 0|req: 2/2] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:03 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 3196 bytes in 1069 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222
+Not Found: /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267
+[pid: 38|app: 0|req: 2/3] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:03 2019] GET /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267 => generated 3196 bytes in 1112 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 38|app: 0|req: 2/4] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:03 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 3196 bytes in 918 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731
+[pid: 39|app: 0|req: 3/5] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:04 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 3196 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441
+Not Found: /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799
+Not Found: /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194
+[pid: 37|app: 0|req: 2/6] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:04 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 3196 bytes in 228 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309
+[pid: 37|app: 0|req: 2/7] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:03 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 3196 bytes in 1104 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 40|app: 0|req: 2/8] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:04 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 3196 bytes in 231 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 40|app: 0|req: 2/9] 10.0.75.1 () {36 vars in 693 bytes} [Sat Jan 19 21:01:03 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 3196 bytes in 1100 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118
+[pid: 38|app: 0|req: 3/10] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 3196 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267
+[pid: 40|app: 0|req: 3/11] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267 => generated 3196 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222
+Not Found: /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800
+[pid: 40|app: 0|req: 4/12] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 3196 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 38|app: 0|req: 4/13] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 3196 bytes in 27 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309
+Not Found: /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799
+[pid: 39|app: 0|req: 5/14] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 3196 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441
+[pid: 39|app: 0|req: 5/15] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 3196 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 37|app: 0|req: 4/16] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 3196 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194
+[pid: 37|app: 0|req: 4/17] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 3196 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731
+[pid: 38|app: 0|req: 5/18] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:01:13 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 3196 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267
+Not Found: /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118
+[pid: 38|app: 0|req: 6/19] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267 => generated 3196 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 37|app: 0|req: 5/20] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 3196 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441
+Not Found: /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222
+[pid: 37|app: 0|req: 7/21] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 3196 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800
+Not Found: /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799
+[pid: 38|app: 0|req: 8/22] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 3196 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 37|app: 0|req: 7/23] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 3196 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309
+[pid: 40|app: 0|req: 6/25] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 3196 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 40|app: 0|req: 6/24] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 3196 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194
+[pid: 38|app: 0|req: 8/26] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 3196 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731
+[pid: 38|app: 0|req: 9/27] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:04:59 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 3196 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267
+Not Found: /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118
+[pid: 37|app: 0|req: 8/28] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267 => generated 3196 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 38|app: 0|req: 10/29] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 3196 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800
+Not Found: /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441
+Not Found: /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309
+Not Found: /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194
+[pid: 38|app: 0|req: 11/33] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 3196 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 37|app: 0|req: 9/30] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 3196 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 39|app: 0|req: 7/31] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 3196 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222
+[pid: 40|app: 0|req: 8/32] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 3196 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799
+[pid: 39|app: 0|req: 7/34] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 3196 bytes in 32 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731
+[pid: 40|app: 0|req: 8/35] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 3196 bytes in 31 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 38|app: 0|req: 12/36] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 3196 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267
+[pid: 37|app: 0|req: 10/37] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1xDH4WAA6RwAACpB-LsCdE8330267 => generated 3196 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118
+[pid: 39|app: 0|req: 8/38] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w150-AIm9zAAAy1Tlm9So5914118 => generated 3196 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222
+[pid: 39|app: 0|req: 9/39] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w16CSAcbdLAAAk8WCqqmI5003222 => generated 3196 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800
+Not Found: /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194
+Not Found: /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799
+Not Found: /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441
+[pid: 40|app: 0|req: 10/41] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w158WAQ-G-AAA-0ZoYkpM6350441 => generated 3196 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 40|app: 0|req: 10/40] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w157aAC3EXAAAqR4DoSUg0782194 => generated 3196 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309
+[pid: 38|app: 0|req: 14/43] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w18z2ATTD5AADhpU9_Ylo8135309 => generated 3196 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 38|app: 0|req: 14/43] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w155mAOgXXAABHr3RQqFs4908799 => generated 3196 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731
+[pid: 37|app: 0|req: 12/44] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w154KAGjpzAAAmv27pX4k8130800 => generated 3196 bytes in 32 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 37|app: 0|req: 12/45] 10.0.75.1 () {36 vars in 694 bytes} [Sat Jan 19 21:05:00 2019] GET /M00/M00/00/00/wKhBA1w159OAZpbvAAA3sZPrVzQ1861731 => generated 3196 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:06:26 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35819 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x5627b192f810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5627b192f810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 27, cores: 2)
+spawned uWSGI worker 2 (pid: 28, cores: 2)
+spawned uWSGI worker 3 (pid: 31, cores: 2)
+spawned uWSGI worker 4 (pid: 32, cores: 2)
+spawned uWSGI http 1 (pid: 34)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:07:30 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36147 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x5631bd5e6810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5631bd5e6810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 28, cores: 2)
+spawned uWSGI worker 2 (pid: 29, cores: 2)
+spawned uWSGI worker 3 (pid: 30, cores: 2)
+spawned uWSGI worker 4 (pid: 31, cores: 2)
+spawned uWSGI http 1 (pid: 32)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:17:54 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37805 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x560a7d9a4810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x560a7d9a4810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 28, cores: 2)
+spawned uWSGI worker 2 (pid: 29, cores: 2)
+spawned uWSGI worker 3 (pid: 30, cores: 2)
+spawned uWSGI worker 4 (pid: 31, cores: 2)
+spawned uWSGI http 1 (pid: 32)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:24:05 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:44233 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x5641b1ab2810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5641b1ab2810 pid: 19 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19)
+spawned uWSGI worker 1 (pid: 27, cores: 2)
+spawned uWSGI worker 2 (pid: 28, cores: 2)
+spawned uWSGI worker 3 (pid: 29, cores: 2)
+spawned uWSGI worker 4 (pid: 30, cores: 2)
+spawned uWSGI http 1 (pid: 31)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:30:44 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43081 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55ec34aba810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ec34aba810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 36, cores: 2)
+spawned uWSGI worker 2 (pid: 37, cores: 2)
+spawned uWSGI worker 3 (pid: 38, cores: 2)
+spawned uWSGI worker 4 (pid: 39, cores: 2)
+spawned uWSGI http 1 (pid: 40)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:35:34 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39715 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55f0c12eb810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55f0c12eb810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 29, cores: 2)
+spawned uWSGI worker 2 (pid: 30, cores: 2)
+spawned uWSGI worker 3 (pid: 31, cores: 2)
+spawned uWSGI worker 4 (pid: 32, cores: 2)
+spawned uWSGI http 1 (pid: 33)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:41:52 2019] ***
+compiled with version: 6.3.0 20170516 on 09 January 2019 11:39:00
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: e263eec0b5e8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:38707 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x562780f35810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x562780f35810 pid: 22 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22)
+spawned uWSGI worker 1 (pid: 38, cores: 2)
+spawned uWSGI worker 2 (pid: 39, cores: 2)
+spawned uWSGI worker 3 (pid: 40, cores: 2)
+spawned uWSGI worker 4 (pid: 42, cores: 2)
+spawned uWSGI http 1 (pid: 43)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:48:20 2019] ***
+compiled with version: 6.3.0 20170516 on 19 January 2019 13:46:12
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: c3e047eb6224
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:38447 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55777ccae810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55777ccae810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 36, cores: 2)
+spawned uWSGI worker 2 (pid: 37, cores: 2)
+spawned uWSGI worker 3 (pid: 38, cores: 2)
+spawned uWSGI worker 4 (pid: 39, cores: 2)
+spawned uWSGI http 1 (pid: 41)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 13:57:58 2019] ***
+compiled with version: 6.3.0 20170516 on 19 January 2019 13:46:12
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: c3e047eb6224
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43611 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55764c17d810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55764c17d810 pid: 19 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19)
+spawned uWSGI worker 1 (pid: 34, cores: 2)
+spawned uWSGI worker 2 (pid: 35, cores: 2)
+spawned uWSGI worker 3 (pid: 36, cores: 2)
+spawned uWSGI worker 4 (pid: 42, cores: 2)
+spawned uWSGI http 1 (pid: 43)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 14:00:19 2019] ***
+compiled with version: 6.3.0 20170516 on 19 January 2019 13:46:12
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 15d9f8b1ec47
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8090 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42875 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x5592a8dca810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5592a8dca810 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 27, cores: 2)
+spawned uWSGI worker 2 (pid: 28, cores: 2)
+spawned uWSGI worker 3 (pid: 29, cores: 2)
+spawned uWSGI worker 4 (pid: 30, cores: 2)
+spawned uWSGI http 1 (pid: 31)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 14:02:34 2019] ***
+compiled with version: 6.3.0 20170516 on 19 January 2019 13:46:12
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 15d9f8b1ec47
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x5615d252e730
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5615d252e730 pid: 19 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19)
+spawned uWSGI worker 1 (pid: 26, cores: 2)
+spawned uWSGI worker 2 (pid: 27, cores: 2)
+spawned uWSGI worker 3 (pid: 28, cores: 2)
+spawned uWSGI worker 4 (pid: 29, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 14:04:04 2019] ***
+compiled with version: 6.3.0 20170516 on 19 January 2019 13:46:12
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 15d9f8b1ec47
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x56302308c730
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56302308c730 pid: 19 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19)
+spawned uWSGI worker 1 (pid: 26, cores: 2)
+spawned uWSGI worker 2 (pid: 27, cores: 2)
+spawned uWSGI worker 3 (pid: 28, cores: 2)
+spawned uWSGI worker 4 (pid: 29, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 14:05:51 2019] ***
+compiled with version: 6.3.0 20170516 on 19 January 2019 13:46:12
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 15d9f8b1ec47
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x56222aec1730
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56222aec1730 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 36, cores: 2)
+spawned uWSGI worker 2 (pid: 37, cores: 2)
+spawned uWSGI worker 3 (pid: 38, cores: 2)
+spawned uWSGI worker 4 (pid: 39, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Jan 19 14:07:01 2019] ***
+compiled with version: 6.3.0 20170516 on 19 January 2019 13:46:12
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 15d9f8b1ec47
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /app
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Dec 29 2018, 07:23:17)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x560fdd434730
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x560fdd434730 pid: 20 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20)
+spawned uWSGI worker 1 (pid: 32, cores: 2)
+spawned uWSGI worker 2 (pid: 33, cores: 2)
+spawned uWSGI worker 3 (pid: 34, cores: 2)
+spawned uWSGI worker 4 (pid: 35, cores: 2)
+[pid: 35|app: 0|req: 1/1] 172.21.0.1 () {42 vars in 719 bytes} [Sat Jan 19 22:07:14 2019] GET /index => generated 7318 bytes in 580 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 2/2] 172.21.0.1 () {42 vars in 759 bytes} [Sat Jan 19 22:07:22 2019] GET /user/login?next=/user/ => generated 2124 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 35|app: 0|req: 3/3] 172.21.0.1 () {44 vars in 830 bytes} [Sat Jan 19 22:07:36 2019] GET /user/login => generated 2124 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 4/4] 172.21.0.1 () {44 vars in 830 bytes} [Sat Jan 19 22:07:38 2019] GET /user/login => generated 2124 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 35|app: 0|req: 5/5] 172.21.0.1 () {42 vars in 777 bytes} [Sat Jan 19 22:07:44 2019] GET /index => generated 7318 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 35|app: 0|req: 6/6] 172.21.0.1 () {44 vars in 833 bytes} [Sat Jan 19 22:07:49 2019] GET /user/register => generated 2645 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 35|app: 0|req: 7/7] 172.21.0.1 () {44 vars in 830 bytes} [Sat Jan 19 22:07:52 2019] GET /user/login => generated 2124 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)

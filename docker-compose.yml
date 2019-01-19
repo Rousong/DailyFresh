@@ -38,6 +38,7 @@ services:
     ports:
       - "9000:8000"
       - "5555:5555"
+      - "8081:8081"
     depends_on:
       - db
       - redis
@@ -60,8 +61,6 @@ services:
   nginx:
     image: nginx
     restart: always
-    ports:
-      - "80:80"
     volumes:
       #网站目录
       - .:/app
@@ -69,5 +68,21 @@ services:
       #日志文件
       - ./logs/nginx:/var/log/nginx
 
+  nginx_main:
+    image: nginx
+    restart: always
+    ports:
+      - "80:81"
+    volumes:
+      #网站目录
+      - .:/app
+      - ./nginx_main/nginx.conf:/etc/nginx/nginx.conf:ro
+      #日志文件
+      - ./logs/nginx_main:/var/log/nginx
+    links:
+      - web
+    depends_on:
+      - web
+      - nginx
 
 
