@@ -16,28 +16,28 @@
 {% block header_con %}
 	<div class="header_con">
 		<div class="header">
-			<div class="welcome fl">欢迎来到天天生鲜!</div>
+			<div class="welcome fl">DailyFreshにようこそ!</div>
 			<div class="fr">
                 {% if user.is_authenticated %}
 				<div class="login_btn fl">
-					欢迎您：<em>{{ user.username }}</em>
+					ようこそ：<em>{{ user.username }}</em>様
                     <span>|</span>
-					<a href="{% url 'user:logout' %}">退出</a>
+					<a href="{% url 'user:logout' %}">ログアウト</a>
 				</div>
                 {% else %}
 				<div class="login_btn fl">
-					<a href="{% url 'user:login' %}">登录</a>
+					<a href="{% url 'user:login' %}">ログイン</a>
 					<span>|</span>
-					<a href="{% url 'user:register' %}">注册</a>
+					<a href="{% url 'user:register' %}">新規登録</a>
 				</div>
                 {% endif %}
 				<div class="user_link fl">
 					<span>|</span>
-					<a href="{% url 'user:user' %}">用户中心</a>
+					<a href="{% url 'user:user' %}">ユーザーセンター</a>
 					<span>|</span>
-					<a href="{% url 'cart:show' %}">我的购物车</a>
+					<a href="{% url 'cart:show' %}">マイカート</a>
 					<span>|</span>
-					<a href="{% url 'user:order' 1 %}">我的订单</a>
+					<a href="{% url 'user:order' 1 %}">マイオーダー</a>
 				</div>
 			</div>
 		</div>
@@ -51,11 +51,11 @@
 		<div class="search_con fl">
             <form method="get" action="/search">
                 <input type="text" class="input_text fl" name="q" placeholder="搜索商品">
-                <input type="submit" class="input_btn fr" name="" value="搜索">
+                <input type="submit" class="input_btn fr" name="" value="検索">
             </form>
 		</div>
 		<div class="guest_cart fr">
-			<a href="{% url 'cart:show' %}" class="cart_name fl">我的购物车</a>
+			<a href="{% url 'cart:show' %}" class="cart_name fl">マイカート</a>
 			<div class="goods_count fl" id="show_count">{{ cart_count }}</div>
 		</div>
 	</div>
@@ -66,16 +66,16 @@
 
 	<div class="footer">
 		<div class="foot_link">
-			<a href="#">关于我们</a>
+			<a href="k.2zzy.com">About Me</a>
 			<span>|</span>
-			<a href="#">联系我们</a>
+			<a href="k.2zzy.com"">コンタクト</a>
 			<span>|</span>
-			<a href="#">招聘人才</a>
+			<a href="k.2zzy.com"">採用情報</a>
 			<span>|</span>
-			<a href="#">友情链接</a>
+			<a href="k.2zzy.com"">Links</a>
 		</div>
-		<p>CopyRight © 2018 成都天天生鲜信息技术有限公司 All Rights Reserved</p>
-		<p>电话：028-****888    蜀ICP备*******8号</p>
+		<p>CopyRight © 2019 株式会社ディレイフレッシュー All Rights Reserved</p>
+		<p>電話：020-****888    東京都新宿区５－８－８</p>
 	</div>
     {# 网页底部html元素块 #}
     {% block bottom %}{% endblock bottom %}

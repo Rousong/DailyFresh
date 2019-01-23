@@ -206,7 +206,7 @@ class LoginView(View):
         else:
             # 用户名或者密码错误
             print("cuowu")
-            return  render(request,'login.html',{'errmsg':'用户名或sss者密码错误'})
+            return  render(request,'login.html',{'errmsg':'用户名或者密码错误'})
 
         # 返回应答
 
