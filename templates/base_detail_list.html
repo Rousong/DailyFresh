@@ -5,7 +5,7 @@
     <div class="navbar_con">
 		<div class="navbar clearfix">
 			<div class="subnav_con fl">
-				<h1>全部商品分类</h1>
+				<h1>商品ジャンル</h1>
 				<span></span>
 				<ul class="subnav">
                     {% for type in types %}
@@ -14,11 +14,11 @@
 				</ul>
 			</div>
 			<ul class="navlist fl">
-				<li><a href="{% url 'goods:index' %}">首页</a></li>
+				<li><a href="{% url 'goods:index' %}">トップページ</a></li>
 				<li class="interval">|</li>
-				<li><a href="">手机生鲜</a></li>
+				<li><a href="">モバイル版</a></li>
 				<li class="interval">|</li>
-				<li><a href="">抽奖</a></li>
+				<li><a href="">抽選ゲーム</a></li>
 			</ul>
 		</div>
 	</div>

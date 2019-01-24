@@ -1,14 +1,14 @@
 {% extends 'base_detail_list.html' %}
 {% load staticfiles %}
-{% block title %}天天生鲜-商品详情{% endblock title %}
+{% block title %}DailyFresh-商品詳細{% endblock title %}
 
 {% block main_content %}
 	<div class="breadcrumb">
-		<a href="#">全部分类</a>
+		<a href="#">商品ジャンル</a>
 		<span>></span>
 		<a href="#">{{ sku.type.name }}</a>
 		<span>></span>
-		<a href="#">商品详情</a>
+		<a href="#">商品詳細</a>
 	</div>
 
 	<div class="goods_detail_con clearfix">
@@ -19,10 +19,10 @@
 			<p>{{ sku.desc }}</p>
 			<div class="prize_bar">
 				<span class="show_pirze">¥<em>{{ sku.price }}</em></span>
-				<span class="show_unit">单  位：{{ sku.unite }}</span>
+				<span class="show_unit">単　位：{{ sku.unite }}</span>
 			</div>
 			<div class="goods_num clearfix">
-				<div class="num_name fl">数 量：</div>
+				<div class="num_name fl">数：</div>
 				<div class="num_add fl">
 					<input type="text" class="num_show fl" value="1">
 					<a href="javascript:;" class="add fr">+</a>
@@ -30,7 +30,7 @@
 				</div>
 			</div>
             <div>
-                <p>其他规格:</p>
+                <p>その他の規格:</p>
                 <ul>
                     {% for sku in same_spu_skus %}
                         <li><a href="{% url 'goods:detail' sku.id %}">{{ sku.name }}</a></li>
@@ -38,11 +38,11 @@
                 </ul>
             </div>
 
-			<div class="total">总价：<em>16.80元</em></div>
+			<div class="total">合計：<em>16.80円</em></div>
 			<div class="operate_btn">
                 {% csrf_token %}
-				<a href="javascript:;" class="buy_btn">立即购买</a>
-				<a href="javascript:;" sku_id="{{ sku.id }}" class="add_cart" id="add_cart">加入购物车</a>
+				<a href="javascript:;" class="buy_btn">いますぐ購入</a>
+				<a href="javascript:;" sku_id="{{ sku.id }}" class="add_cart" id="add_cart">商品をかごに追加</a>
 			</div>
 		</div>
 	</div>
@@ -50,7 +50,7 @@
 	<div class="main_wrap clearfix">
 		<div class="l_wrap fl clearfix">
 			<div class="new_goods">
-				<h3>新品推荐</h3>
+				<h3>おすすめ新品</h3>
 				<ul>
                     {% for sku in new_skus %}
 					<li>
@@ -65,13 +65,13 @@
 
 		<div class="r_wrap fr clearfix">
 			<ul class="detail_tab clearfix">
-				<li id='tag_detail' class="active">商品介绍</li>
-				<li id="tag_comment">评论</li>
+				<li id='tag_detail' class="active">商品紹介</li>
+				<li id="tag_comment">コメント</li>
 			</ul>
 
 			<div class="tab_content" id="tab_detail">
 				<dl>
-					<dt>商品详情：</dt>
+					<dt>商品Detail：</dt>
                     <dd>{{ sku.goods.detail|safe }}</dd>
 				</dl>
 			</div>
@@ -79,8 +79,8 @@
             <div class="tab_content" id="tab_comment" style="display: none">
 				<dl>
                     {% for order in sku_orders %}
-					<dt>评论时间：{{ order.update_time }}&nbsp;&nbsp;用户名:{{ order.order.user.username }}</dt>
-                    <dd>评论内容:{{ order.comment }}</dd>
+					<dt>コメント時間：{{ order.update_time }}&nbsp;&nbsp;ユーザーID:{{ order.order.user.username }}</dt>
+                    <dd>コメント内容:{{ order.comment }}</dd>
                     {% endfor %}
 				</dl>
 			</div>

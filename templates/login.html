@@ -3,7 +3,7 @@
 {% load staticfiles %}
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>天天生鲜-登录</title>
+	<title>DailyFresh-ログイン</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 </head>
@@ -15,11 +15,11 @@
 	<div class="login_form_bg">
 		<div class="login_form_wrap clearfix">
 			<div class="login_banner fl"></div>
-			<div class="slogan fl">日夜兼程 · 急速送达</div>
+			<div class="slogan fl">あなたじゃないと困る · その言葉が宝物</div>
 			<div class="login_form fr">
 				<div class="login_title clearfix">
-					<h1>用户登录</h1>
-					<a href="{% url 'user:register' %}">立即注册</a>
+					<h1>ログイン</h1>
+					<a href="{% url 'user:register' %}">新規登録</a>
 				</div>
 				<div class="form_input">
                     {#  不设置表单的action时,提交表单的时候,地址就是当前访问的地址提交数据 #}

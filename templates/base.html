@@ -35,7 +35,7 @@
 					<span>|</span>
 					<a href="{% url 'user:user' %}">ユーザーセンター</a>
 					<span>|</span>
-					<a href="{% url 'cart:show' %}">マイカート</a>
+					<a href="{% url 'cart:show' %}">買い物かご</a>
 					<span>|</span>
 					<a href="{% url 'user:order' 1 %}">マイオーダー</a>
 				</div>
@@ -50,12 +50,12 @@
 		<a href="{% url 'goods:index' %}" class="logo fl"><img src="{% static 'images/logo.png' %}"></a>
 		<div class="search_con fl">
             <form method="get" action="/search">
-                <input type="text" class="input_text fl" name="q" placeholder="搜索商品">
+                <input type="text" class="input_text fl" name="q" placeholder="商品検索">
                 <input type="submit" class="input_btn fr" name="" value="検索">
             </form>
 		</div>
 		<div class="guest_cart fr">
-			<a href="{% url 'cart:show' %}" class="cart_name fl">マイカート</a>
+			<a href="{% url 'cart:show' %}" class="cart_name fl">買い物かご</a>
 			<div class="goods_count fl" id="show_count">{{ cart_count }}</div>
 		</div>
 	</div>
@@ -66,13 +66,13 @@
 
 	<div class="footer">
 		<div class="foot_link">
-			<a href="k.2zzy.com">About Me</a>
+			<a href="http://k.2zzy.com">About Me</a>
 			<span>|</span>
-			<a href="k.2zzy.com"">コンタクト</a>
+			<a href="http://k.2zzy.com"">コンタクト</a>
 			<span>|</span>
-			<a href="k.2zzy.com"">採用情報</a>
+			<a href="http://k.2zzy.com"">採用情報</a>
 			<span>|</span>
-			<a href="k.2zzy.com"">Links</a>
+			<a href="http://k.2zzy.com"">Links</a>
 		</div>
 		<p>CopyRight © 2019 株式会社ディレイフレッシュー All Rights Reserved</p>
 		<p>電話：020-****888    東京都新宿区５－８－８</p>

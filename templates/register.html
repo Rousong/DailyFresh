@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-{% block title %}天天生鲜-注册{% endblock title %}
+{% block title %}DailyFresh-新規登録{% endblock title %}
 {% block topfiles%}
 	<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/register.js' %}"></script>
@@ -11,46 +11,46 @@
 	<div class="register_con">
 		<div class="l_con fl">
 			<a class="reg_logo"><img src="{% static 'images/logo02.png' %}"></a>
-			<div class="reg_slogan">足不出户  ·  新鲜每一天</div>
+			<div class="reg_slogan">いえのスーパー  ·  毎日新鮮</div>
 			<div class="reg_banner"></div>
 		</div>
 
 		<div class="r_con fr">
 			<div class="reg_title clearfix">
-				<h1>用户注册</h1>
-				<a href="login">登录</a>
+				<h1>新規登録</h1>
+				<a href="login">ログイン</a>
 			</div>
 			<div class="reg_form clearfix">
 				<form method="post" action="/user/register">
                     {% csrf_token %}
 				<ul>
 					<li>
-						<label>用户名:</label>
+						<label>ID:</label>
 						<input type="text" name="user_name" id="user_name">
-						<span class="error_tip">提示信息</span>
+						<span class="error_tip">メッセージ</span>
 					</li>					
 					<li>
-						<label>密码:</label>
+						<label>パスワード:</label>
 						<input type="password" name="pwd" id="pwd">
-						<span class="error_tip">提示信息</span>
+						<span class="error_tip">メッセージ</span>
 					</li>
 					<li>
-						<label>确认密码:</label>
+						<label>パスワード確認:</label>
 						<input type="password" name="cpwd" id="cpwd">
-						<span class="error_tip">提示信息</span>
+						<span class="error_tip">メッセージ</span>
 					</li>
 					<li>
-						<label>邮箱:</label>
+						<label>メール:</label>
 						<input type="text" name="email" id="email">
-						<span class="error_tip">提示信息</span>
+						<span class="error_tip">メッセージ</span>
 					</li>
 					<li class="agreement">
 						<input type="checkbox" name="allow" id="allow" checked="checked">
-						<label>同意”天天生鲜用户使用协议“</label>
-						<span class="error_tip2">提示信息</span>
+						<label>登録には、規約および個人情報保護方針への同意が必要です。</label>
+						<span class="error_tip2">メッセージ</span>
 					</li>
 					<li class="reg_sub">
-						<input type="submit" value="注 册" name="">
+						<input type="submit" value="サイイン" name="">
 					</li>
 				</ul>
                     {{ errmsg }}

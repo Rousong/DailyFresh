@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-{% block title %}天天生鲜-首页{% endblock title %}
+{% block title %}DailyFresh-トップページ{% endblock title %}
 {% block topfiles %}
 	<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
@@ -10,13 +10,13 @@
 {% block body %}
 	<div class="navbar_con">
 		<div class="navbar">
-			<h1 class="fl">全部商品分类</h1>
+			<h1 class="fl">商品ジャンル別</h1>
 			<ul class="navlist fl">
-				<li><a href="">首页</a></li>
+				<li><a href="">トップページ</a></li>
 				<li class="interval">|</li>
-				<li><a href="">手机生鲜</a></li>
+				<li><a href="">モバイル版</a></li>
 				<li class="interval">|</li>
-				<li><a href="">抽奖</a></li>
+				<li><a href="">抽選ゲーム</a></li>
 			</ul>
 		</div>
 	</div>
@@ -55,7 +55,7 @@
                     <a href="{% url 'goods:detail' banner.sku.id  %}">{{ banner.sku.name }}</a>
                 {% endfor %}
 			</div>
-			<a href="#" class="goods_more fr" id="fruit_more">查看更多 ></a>
+			<a href="#" class="goods_more fr" id="fruit_more">More ></a>
 		</div>
 
 		<div class="goods_con clearfix">
