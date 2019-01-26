@@ -1,39 +1,39 @@
 {% extends 'base_user_center.html' %}
 {% block right_content %}
 		<div class="right_content clearfix">
-				<h3 class="common_title2">收货地址</h3>
+				<h3 class="common_title2">配送先住所</h3>
 				<div class="site_con">
 					<dl>
-						<dt>当前地址：</dt>
+						<dt>現在の住所：</dt>
                         {% if address %}
-						    <dd>{{ address.addr }} （{{ address.receiver }} 收） {{ address.phone }}</dd>
+						    <dd>{{ address.addr }} （{{ address.receiver }} 受け取る） {{ address.phone }}</dd>
 					    {% else %}
                             <dd>{{ errmsg }}</dd>
                         {% endif %}
                     </dl>
 				</div>
-				<h3 class="common_title2">编辑地址</h3>
+				<h3 class="common_title2">住所を編集</h3>
 				<div class="site_con">
 					<form method="post">
                         {% csrf_token %}
 						<div class="form_group">
-							<label>收件人：</label>
+							<label>受取人 ：</label>
 							<input type="text" name="receiver">
 						</div>
 						<div class="form_group form_group2">
-							<label>详细地址：</label>
+							<label>詳細な住所：</label>
 							<textarea class="site_area" name="addr"></textarea>
 						</div>
 						<div class="form_group">
-							<label>邮编：</label>
+							<label>郵便番号：</label>
 							<input type="text" name="zip_code">
 						</div>
 						<div class="form_group">
-							<label>手机：</label>
+							<label>携帯電話 ：</label>
 							<input type="text" name="phone">
 						</div>
 
-						<input type="submit" name="" value="提交" class="info_submit">
+						<input type="submit" name="" value="提出" class="info_submit">
 					</form>
 				</div>
 		</div>

@@ -9,13 +9,13 @@
 </head>
 <body>
 	<div class="login_top clearfix">
-		<a href="index.html" class="login_logo"><img src="{% static 'images/logo02.png' %}"></a>
+		<a href="{% url 'goods:index' %}" class="login_logo"><img src="{% static 'images/logo02.png' %}"></a>
 	</div>
 
 	<div class="login_form_bg">
 		<div class="login_form_wrap clearfix">
 			<div class="login_banner fl"></div>
-			<div class="slogan fl">あなたじゃないと困る · その言葉が宝物</div>
+			<div class="slogan fl">新鮮は大事</div>
 			<div class="login_form fr">
 				<div class="login_title clearfix">
 					<h1>ログイン</h1>
@@ -25,14 +25,14 @@
                     {#  不设置表单的action时,提交表单的时候,地址就是当前访问的地址提交数据 #}
 					<form method="post">
                         {% csrf_token %}
-						<input type="text" name="username" class="name_input"  value="{{ username }}" placeholder="请输入用户名">
-						<div class="user_error">输入错误</div>
-						<input type="password" name="pwd" class="pass_input" placeholder="请输入密码">
-						<div class="pwd_error">输入错误</div>
+						<input type="text" name="username" class="name_input"  value="{{ username }}" placeholder="ユーザー名を入力してください">
+						<div class="user_error">入力エラー</div>
+						<input type="password" name="pwd" class="pass_input" placeholder="パスワードを入力してください">
+						<div class="pwd_error">入力エラー</div>
 						<div class="more_input clearfix">
 							<input type="checkbox" name="remember"{{ checked }}>
-							<label>记住用户名</label>
-							<a href="#">忘记密码</a>
+							<label>IDを保存する</label>
+							<a href="#">パスワードを忘れた場合</a>
 						</div>
 						<input type="submit" name="" value="登录" class="input_submit">
 					</form>
@@ -43,17 +43,17 @@
 	</div>
  {{ errmsg }}
 	<div class="footer no-mp">
-		<div class="foot_link">
-			<a href="#">关于我们</a>
+        <div class="foot_link">
+			<a href="http://k.2zzy.com">About Me</a>
 			<span>|</span>
-			<a href="#">联系我们</a>
+			<a href="http://k.2zzy.com">問い合わせ</a>
 			<span>|</span>
-			<a href="#">招聘人才</a>
+			<a href="http://k.2zzy.com">採用情報</a>
 			<span>|</span>
-			<a href="#">友情链接</a>		
+			<a href="http://k.2zzy.com">Links</a>
 		</div>
-		<p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
-		<p>电话：010-****888    京ICP备*******8号</p>
+		<p>CopyRight © 2019 株式会社ディレイフレッシュー All Rights Reserved</p>
+		<p>電話：020-****888    東京都新宿区５－８－８</p>
 	</div>
 	
 </body>

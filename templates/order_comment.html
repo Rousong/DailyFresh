@@ -1,13 +1,13 @@
 {% extends 'base_user_center.html' %}
 {% load staticfiles %}
-{% block title %}天天生鲜-用户中心{% endblock %}
-{% block page_title %}用户中心{% endblock page_title %}
+{% block title %}DailyFresh-ユーザーセンター{% endblock %}
+{% block page_title %}ユーザーセンター{% endblock page_title %}
 {% block right_content %}
         <div class="right_content clearfix">
-            <h3 class="common_title2">订单评价</h3>
+            <h3 class="common_title2">オーダーコメント</h3>
                 <ul class="order_list_th w978 clearfix">
 					<li class="col01">{{order.create_time}}</li>
-					<li class="col02">订单号：{{order.order_id}}</li>
+					<li class="col02">オーダーID：{{order.order_id}}</li>
 					<li class="col02 stress">{{order.status_name}}</li>
 				</ul>
             <form method="post">
@@ -34,12 +34,12 @@
                 <div class="site_con">
                     <input type="hidden" name="sku_{{forloop.counter}}" value="{{order_sku.sku.id}}">
                     <div class="form_group form_group2">
-                        <label>评价内容：</label>
+                        <label>コメント：</label>
                         <textarea class="site_area" name="content_{{forloop.counter}}"></textarea>
                     </div>
                 </div>
                 {% endfor %}
-                <input type="submit" name="" value="提交" class="info_submit">
+                <input type="submit" name="" value="提出" class="info_submit">
             </form>
         </div>
 {% endblock right_content %}

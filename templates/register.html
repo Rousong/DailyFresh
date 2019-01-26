@@ -10,15 +10,15 @@
 {% block body %}
 	<div class="register_con">
 		<div class="l_con fl">
-			<a class="reg_logo"><img src="{% static 'images/logo02.png' %}"></a>
-			<div class="reg_slogan">いえのスーパー  ·  毎日新鮮</div>
+			<a href="{% url 'goods:index' %}" class="reg_logo"><img src="{% static 'images/logo02.png' %}"></a>
+			<div class="reg_slogan">家のスーパー  ·  毎日新鮮</div>
 			<div class="reg_banner"></div>
 		</div>
 
 		<div class="r_con fr">
 			<div class="reg_title clearfix">
 				<h1>新規登録</h1>
-				<a href="login">ログイン</a>
+				<a href="login">登録</a>
 			</div>
 			<div class="reg_form clearfix">
 				<form method="post" action="/user/register">
@@ -30,12 +30,12 @@
 						<span class="error_tip">メッセージ</span>
 					</li>					
 					<li>
-						<label>パスワード:</label>
+						<label>Password:</label>
 						<input type="password" name="pwd" id="pwd">
 						<span class="error_tip">メッセージ</span>
 					</li>
 					<li>
-						<label>パスワード確認:</label>
+						<label>Password:</label>
 						<input type="password" name="cpwd" id="cpwd">
 						<span class="error_tip">メッセージ</span>
 					</li>
@@ -46,7 +46,7 @@
 					</li>
 					<li class="agreement">
 						<input type="checkbox" name="allow" id="allow" checked="checked">
-						<label>登録には、規約および個人情報保護方針への同意が必要です。</label>
+						<label>登録には、規約への同意が必要です。</label>
 						<span class="error_tip2">メッセージ</span>
 					</li>
 					<li class="reg_sub">
