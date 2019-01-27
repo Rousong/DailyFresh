@@ -38,7 +38,7 @@
 		<li class="col01"><input type="checkbox" name="" checked=""></li>
 		<li class="col02">全選択</li>
 		<li class="col03">合計(送料抜き)：<span>¥</span><em>{{ total_price }}</em><br>合計<b>{{ total_count }}</b>件商品</li>
-		<li class="col04"><input type="submit" value="去结算"></li>
+		<li class="col04"><input type="submit" value="支払"></li>
 	</ul>
     </form>
 {% endblock body %}
@@ -73,7 +73,7 @@
         // 计算商品的小计
         amount = parseInt(count)*parseFloat(price)
         // 设置商品的小计
-        sku_ul.children('.col07').text(amount.toFixed(2)+'元')
+        sku_ul.children('.col07').text(amount.toFixed(2)+'円')
     }
     // 商品的全选和全不选
     $('.settlements').find(':checkbox').change(function () {
