@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from apps.order.views import OrderPlaceView,OrderCommitView,OrderPayView,CheckPayView,CommentView
+from apps.order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView, CommentView
 
 urlpatterns = [
     url(r'^place$', OrderPlaceView.as_view(), name='place'),  # 提交订单页面显示

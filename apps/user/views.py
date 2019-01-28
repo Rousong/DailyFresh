@@ -1,6 +1,6 @@
-from django.shortcuts import render,redirect # redirect 重定向
-from django.urls import reverse # django2.0 把原来的 django.core.urlresolvers 包 更改为了 django.urls包
-from apps.user.models import User,Address
+from django.shortcuts import render, redirect  # redirect 重定向
+from django.urls import reverse  # django2.0 把原来的 django.core.urlresolvers 包 更改为了 django.urls包
+from apps.user.models import User, Address
 from apps.goods.models import GoodsSKU
 from apps.order.models import OrderInfo, OrderGoods
 from django.views.generic import View
@@ -9,12 +9,13 @@ from django.http import HttpResponse
 from django.core.paginator import Paginator
 from django.core.mail import send_mail
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
-from itsdangerous import SignatureExpired #这是一个异常
-from django.contrib.auth import authenticate,login,logout# 这是django对用户登录验证和保持用户登录的模块
+from itsdangerous import SignatureExpired  # 这是一个异常
+from django.contrib.auth import authenticate, login, logout  # 这是django对用户登录验证和保持用户登录的模块
 from utils.mixin import LoginRequiredMixin
 from celery_tasks.tasks import send_register_active_email
 from django_redis import get_redis_connection
-import  re
+import re
+
 
 # Create your views here.
 def register(request):
@@ -57,14 +58,16 @@ def register(request):
         # 返回一个应答 跳转到首页
         return redirect(reverse('goods:index'))
 
+
 # 关于类视图的使用:
 class RegisterView(View):
     '''注册'''
-    def get(self,request):
+
+    def get(self, request):
         '''显示注册页面'''
         return render(request, 'register.html')
 
-    def post(self,request):
+    def post(self, request):
         '''进行注册处理'''
         # 接受数据
         username = request.POST.get('user_name')
@@ -103,14 +106,13 @@ class RegisterView(View):
         # 发送激活邮件,包含激活链接
         # 激活链接中需要包含用户的身份信息
 
-        #加密用户的身份信息,
-        serializer = Serializer(settings.SECRET_KEY,3600)
-        info = {'confirm':user.id}
-        token =serializer.dumps(info) # bytes
+        # 加密用户的身份信息,
+        serializer = Serializer(settings.SECRET_KEY, 3600)
+        info = {'confirm': user.id}
+        token = serializer.dumps(info)  # bytes
         # !!!!大坑 返回的加密数据多加了一个'b' http://127.0.0.1:8000/user/active/b'eyJh*****
         # 这里代表是字节流,可是我们想要的是一个字符串 我们需要一个解码
-        token = token.decode('utf8') #默认就是utf8 括号里也可以不写
-
+        token = token.decode('utf8')  # 默认就是utf8 括号里也可以不写
 
         # # 发邮件
         # subject = '天天生鲜用户激活'
@@ -122,9 +124,8 @@ class RegisterView(View):
         # print(send_status)
         # # 返回一个应答 跳转到首页
 
-
         # 如何使用异步celery处理延时任务的话 就调用这个函数
-        send_register_active_email.delay(email,username,token)
+        send_register_active_email.delay(email, username, token)
 
         return redirect(reverse('goods:index'))
 
@@ -132,7 +133,8 @@ class RegisterView(View):
 # 用户激活的视图
 class ActiveView(View):
     '''用户激活'''
-    def get(self,request,token):
+
+    def get(self, request, token):
         # 进行解密,获取要激活的用户信息
         serializer = Serializer(settings.SECRET_KEY, 3600)
         try:
@@ -150,10 +152,13 @@ class ActiveView(View):
         except SignatureExpired as e:
             # 激活链接已过期
             return HttpResponse('激活链接已过期')
+
+
 # /user/login
 class LoginView(View):
     '''登录'''
-    def get(self,request):
+
+    def get(self, request):
         '''显示登录页面'''
         # 判断是否记住了用户名
         if 'username' in request.COOKIES:
@@ -162,17 +167,17 @@ class LoginView(View):
         else:
             username = ''
             checked = ''
-        return render(request,'login.html',{'username':username,'checked':checked})
+        return render(request, 'login.html', {'username': username, 'checked': checked})
 
-    def post(self,request):
+    def post(self, request):
         '''登录校验'''
         # 接收数据
         username = request.POST.get('username')
         password = request.POST.get('pwd')
 
         # 校验数据
-        if not all([username,password]):
-            return render(request,'login.html',{'errmsg':'数据不完整'})
+        if not all([username, password]):
+            return render(request, 'login.html', {'errmsg': '数据不完整'})
         # 业务处理:登录校验
 
         user = authenticate(username=username, password=password)
@@ -181,10 +186,10 @@ class LoginView(View):
             if user.is_active:
                 # 用户已激活
                 # 记录用户的登录状态
-                login(request,user)
+                login(request, user)
 
                 # 获取登录后所要跳转到的地址
-                next_url = request.GET.get('next',reverse('goods:index'))
+                next_url = request.GET.get('next', reverse('goods:index'))
 
                 # 跳转到首页
                 response = redirect(next_url)
@@ -193,7 +198,7 @@ class LoginView(View):
 
                 if remember == 'on':
                     # 记住用户名
-                    response.set_cookie('username',username,max_age=7*24*3600)
+                    response.set_cookie('username', username, max_age=7 * 24 * 3600)
                     print("ceshi")
                 else:
                     response.delete_cookie('username')
@@ -206,30 +211,33 @@ class LoginView(View):
         else:
             # 用户名或者密码错误
             print("cuowu")
-            return  render(request,'login.html',{'errmsg':'用户名或者密码错误'})
+            return render(request, 'login.html', {'errmsg': '用户名或者密码错误'})
 
         # 返回应答
+
 
 # /user/logout
 class LogoutView(View):
     '''退出登录'''
-    def get(self,request):
+
+    def get(self, request):
         '''退出登录'''
         # 清除用户的session信息
         logout(request)
 
         # 跳转到首页
-        return  redirect(reverse('goods:index'))
+        return redirect(reverse('goods:index'))
+
 
 # /user/
-class UserInfoView(LoginRequiredMixin,View):
+class UserInfoView(LoginRequiredMixin, View):
     '''用户中心-信息页'''
-    def get(self,request):
+
+    def get(self, request):
         '''显示'''
         # django框架会给request对象添加一个属性user
         # 如果用户已登录，user的类型User
         # 如果用户没登录，user的类型AnonymousUser
-
 
         # 获取用户的个人信息
         user = request.user
@@ -246,7 +254,7 @@ class UserInfoView(LoginRequiredMixin,View):
         # from redis import StrictRedis
         # conn = StrictRedis(host='172.16.179.142', db=10)
         # 上面这两句可以用下面这一句封装(利用了django-redis)
-        con = get_redis_connection('default') # 这里的default就是settings里面的redis的default设置
+        con = get_redis_connection('default')  # 这里的default就是settings里面的redis的default设置
         # 这个con就是 上面的StrictRedis的实例对象
 
         history_key = 'history_%d' % user.id
@@ -266,7 +274,7 @@ class UserInfoView(LoginRequiredMixin,View):
         for id in sku_ids:
             # 根据id查询商品的信息
             goods = GoodsSKU.objects.get(id=id)
-        #     # 追加到列表中
+            #     # 追加到列表中
             goods_li.append(goods)
 
         # 组织模板上下文
@@ -276,7 +284,8 @@ class UserInfoView(LoginRequiredMixin,View):
             'page': 'user'}
 
         # 除了我们给django传递的模板变量，django还会把user传递给模板文件
-        return  render(request,'user_center_info.html',context)
+        return render(request, 'user_center_info.html', context)
+
 
 # /user/order
 class UserOrderView(LoginRequiredMixin, View):
@@ -343,9 +352,11 @@ class UserOrderView(LoginRequiredMixin, View):
         # 使用模板
         return render(request, 'user_center_order.html', context)
 
+
 # /user/address
-class AddressView(LoginRequiredMixin,View):
+class AddressView(LoginRequiredMixin, View):
     '''用户中心-地址页'''
+
     def get(self, request):
         '''显示'''
         user = request.user  # 获取对应的用户对象
@@ -359,24 +370,24 @@ class AddressView(LoginRequiredMixin,View):
         address = Address.object.get_default_address(user)
 
         page = 'addr'
-        return render(request, 'user_center_site.html',{'page':page,'address':address})
+        return render(request, 'user_center_site.html', {'page': page, 'address': address})
 
-    def post(self,request):
+    def post(self, request):
         # 接收数据
         receiver = request.POST.get('receiver')
         addr = request.POST.get('addr')
         zip_code = request.POST.get('zip_code')
         phone = request.POST.get('phone')
         # 校验数据
-        if not all([receiver,addr,phone]):
-            return render(request,'user_center_site.html',{'errmsg':'数据不完整'})
+        if not all([receiver, addr, phone]):
+            return render(request, 'user_center_site.html', {'errmsg': '数据不完整'})
 
         # 校验手机号
-        if not re.match(r'1[3|4|5|7|8][0-9]{9}$',phone):
+        if not re.match(r'1[3|4|5|7|8][0-9]{9}$', phone):
             return render(request, 'user_center_site.html', {'errmsg': '手机号码格式错误'})
         # 业务处理:地址添加
         # 如果用户已经存在默认收货地址 添加的地址不作为默认收货地址 否则作为默认收货地址
-        user = request.user # 获取对应的用户对象
+        user = request.user  # 获取对应的用户对象
         # try:
         #     address = Address.objects.get(user=user,is_default=True)
         # except Address.DoesNotExist:
@@ -391,11 +402,11 @@ class AddressView(LoginRequiredMixin,View):
 
         # 添加地址
         Address.object.create(user=user,
-                               receiver=receiver,
-                               addr=addr,
-                               zip_code=zip_code,
-                               phone=phone,
-                               is_default=is_default)
+                              receiver=receiver,
+                              addr=addr,
+                              zip_code=zip_code,
+                              phone=phone,
+                              is_default=is_default)
 
         # 返回应答
         return redirect(reverse('user:address'))

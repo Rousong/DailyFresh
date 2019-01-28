@@ -14,10 +14,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 import sys
 
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 加入系统的路径,可以不在使用ａｐｐｓ前缀
-sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -30,7 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -41,24 +39,22 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'haystack',  # 注册全文检索框架 要相对应的设置haystack的设置项 ↓
-    'tinymce', # 富文本编辑器
-    'apps.user', # 用户模块
-    'apps.cart', # 购物车模块
-    'apps.goods',# 商品模块
-    'apps.order',# 订单模块
-
-
+    'tinymce',  # 富文本编辑器
+    'apps.user',  # 用户模块
+    'apps.cart',  # 购物车模块
+    'apps.goods',  # 商品模块
+    'apps.order',  # 订单模块
 
 )
 
 # 注意!!!! 这是Django版本的问题，1.10之前，中间件的key为MIDDLEWARE_CLASSES, 1.10之后，为MIDDLEWARE。
 # 所以在开发环境和其他环境的版本不一致时，要特别小心，会有坑。
-MIDDLEWARE =  (
+MIDDLEWARE = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    #'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    # 'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -69,7 +65,7 @@ ROOT_URLCONF = 'dailyfresh.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -84,7 +80,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'dailyfresh.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
@@ -93,13 +88,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysitedb',
         'USER': 'root',
-        'PASSWORD':'11111111',
-        'HOST':'db',
-        'PORT':'3306',
+        'PASSWORD': '11111111',
+        'HOST': 'db',
+        'PORT': '3306',
 
     }
 }
-#要手动去创建这个数据库:
+# 要手动去创建这个数据库:
 # create database tiantian charset=utf8;
 
 
@@ -122,25 +117,23 @@ USE_TZ = True
 CELERY_ENABLE_UTC = True
 CELERY_TIMEZONE = "UTC"
 
-
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
     # 这个的意思是字符串拼接 BASEDIR是项目目录 后面可以添加拼接目录
 ]
 # 指定收集静态文件的路径
-#STATIC_ROOT = '/app/static_col/'
+# STATIC_ROOT = '/app/static_col/'
 
 # 富文本编辑器的设置
-TINYMCE_DEFAULT_CONFIG ={
-    'theme':'advanced',
-    'width':600,
-    'height':400,
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': 'advanced',
+    'width': 600,
+    'height': 400,
 }
 
 # 邮件相关的设置
@@ -148,11 +141,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 465
-#发送邮件的邮箱
+# 发送邮件的邮箱
 EMAIL_HOST_USER = 'do_1024@163.com'
-#在邮箱中设置的客户端授权密码
+# 在邮箱中设置的客户端授权密码
 EMAIL_HOST_PASSWORD = 'beaock0039yuzk'
-#收件人看到的发件人
+# 收件人看到的发件人
 EMAIL_FROM = 'do_1024<do_1024@163.com>'
 
 # EMAIL_FROM = 'do_1024  这里的名字一定要设置正确的名字 要和邮箱里的设置对应上
@@ -180,18 +173,16 @@ EMAIL_FROM = 'do_1024<do_1024@163.com>'
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://redis:6379/2", # redis所在的主机的IP地址
+        "LOCATION": "redis://redis:6379/2",  # redis所在的主机的IP地址
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     }
 }
 
-
-
 # 配置session的存储到缓存中，即　使用的redis数据库
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-SESSION_CACHE_ALIAS = "default" # 之后的章节会讲
+SESSION_CACHE_ALIAS = "default"  # 之后的章节会讲
 
 # 如下设置是默认的 不写的话这就是默认的设置 存储在数据库中
 # SESSION_ENGINE = "django.contrib.sessions.backends.db"
@@ -206,7 +197,7 @@ DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
 FDFS_CLIENT_CONF = './utils/fdfs/client.conf'
 
 # 指定fdfs 服务器 nginx服务的地址
-FDFS_NGINX_URL = 'http://10.0.75.2:8080/' # nginx所在的主机IP地址
+FDFS_NGINX_URL = 'http://10.0.75.2:8080/'  # nginx所在的主机IP地址
 
 # 全文检索框架的配置  haystack可以对应四种搜索引擎 这里我们用whoosh
 HAYSTACK_CONNECTIONS = {

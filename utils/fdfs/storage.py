@@ -2,9 +2,11 @@ from django.core.files.storage import Storage
 from django.conf import settings
 from fdfs_client.client import Fdfs_client
 
+
 class FDFSStorage(Storage):
     '''文件存储类'''
-    def __init__(self, client_conf = None, nginx_url = None):
+
+    def __init__(self, client_conf=None, nginx_url=None):
         """初始化"""
         if client_conf is None:
             client_conf = settings.FDFS_CLIENT_CONF
@@ -14,10 +16,11 @@ class FDFSStorage(Storage):
             nginx_url = settings.FDFS_NGINX_URL
         self.nginx_url = nginx_url
 
-    def _open(self,name,mode='rb'):
+    def _open(self, name, mode='rb'):
         '''打开文件时使用'''
         pass
-    def _save(self,name,content):
+
+    def _save(self, name, content):
         '''保存文件时使用'''
         # name是选择的上传文件的名字
         # content是File的对象,包含你上传文件内容的File对象
@@ -28,7 +31,7 @@ class FDFSStorage(Storage):
         # client = Fdfs_client(self.client_conf)
 
         # 上传到fdfs的服务器中
-        res =client.upload_by_buffer(content.read())
+        res = client.upload_by_buffer(content.read())
         # {
         #     'Group name': group_name,
         #     'Remote file_id': remote_file_id,
@@ -58,6 +61,4 @@ class FDFSStorage(Storage):
     def url(self, name):
         """返回可访问到name文件的URL路径"""
 
-        return self.nginx_url+name
-
-
+        return self.nginx_url + name

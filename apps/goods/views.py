@@ -1,16 +1,18 @@
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from apps.order.models import OrderGoods
-from apps.goods.models import GoodsSKU, GoodsType, IndexGoodsBanner,IndexPromotionBanner,IndexTypeGoodsBanner
-from django.urls import reverse # django2.0 把原来的 django.core.urlresolvers 包 更改为了 django.urls包
+from apps.goods.models import GoodsSKU, GoodsType, IndexGoodsBanner, IndexPromotionBanner, IndexTypeGoodsBanner
+from django.urls import reverse  # django2.0 把原来的 django.core.urlresolvers 包 更改为了 django.urls包
 from django_redis import get_redis_connection
 
 from django.core.paginator import Paginator
 # 使用缓存导入相关的包
 from django.core.cache import cache
 
+
 class IndexView(View):
     """首页"""
+
     def get(self, request):
         """显示"""
         # 先判断缓存中是否有数据,没有数据不会报错返回NONE
@@ -32,14 +34,12 @@ class IndexView(View):
             # 获取首页分类商品信息展示
             for type in types:
                 # 查询首页显示的type类型的文字商品信息
-                title_banner = IndexTypeGoodsBanner.objects.filter(type=type, display_type = 0).order_by('index')
+                title_banner = IndexTypeGoodsBanner.objects.filter(type=type, display_type=0).order_by('index')
                 # 查询首页显示的图片商品信息
-                image_banner = IndexTypeGoodsBanner.objects.filter(type= type, display_type = 1).order_by('index')
+                image_banner = IndexTypeGoodsBanner.objects.filter(type=type, display_type=1).order_by('index')
                 # 动态给type对象添加两个属性保存数据
                 type.title_banner = title_banner
                 type.image_banner = image_banner
-
-
 
             # 组织上下文
             context = {
@@ -65,9 +65,10 @@ class IndexView(View):
             # 获取用户购物车中国的商品条目数
             cart_count = conn.hlen(cart_key)
 
-            context.update(cart_count = cart_count)
+            context.update(cart_count=cart_count)
 
         return render(request, 'index.html', context)
+
 
 # /goods/商品id
 class DetailView(View):
@@ -118,9 +119,9 @@ class DetailView(View):
                    'new_skus': new_skus,
                    'same_spu_skus': same_spu_skus,
                    'cart_count': cart_count}
-    #
-    #     # 使用模板
-        return render(request, 'detail.html',context)
+        #
+        #     # 使用模板
+        return render(request, 'detail.html', context)
 
 
 # 种类id 页码 排序方式

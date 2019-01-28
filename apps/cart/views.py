@@ -6,6 +6,7 @@ from apps.goods.models import GoodsSKU
 from django_redis import get_redis_connection
 from utils.mixin import LoginRequiredMixin
 
+
 # Create your views here.
 # 添加商品到购物车:
 # 1）请求方式，采用ajax post
